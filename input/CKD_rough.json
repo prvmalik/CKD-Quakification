@@ -2,41 +2,23 @@
     "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v2.0/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
-            "Id":  "Gabapentin rough",
-            "Path":  "Models/Gabapentin_mod.json",
+            "Id":  "Gabapentin",
+            "Path":  "Models/Gabapentin.json",
             "BuildingBlocks": [],
             "SimulationParameters": []
         },
         {
-            "Id":  "Acebutolol rough",
-            "Path":  "Models/Acebutolol_mod.json",
+            "Id":  "Acebutolol",
+            "Path":  "Models/Acebutolol.json",
             "BuildingBlocks": [],
             "SimulationParameters": []
         },
         {
-            "Id":  "Atenolol rough",
-            "Path":  "Models/Atenolol_mod.json",
+            "Id":  "Atenolol",
+            "Path":  "Models/Atenolol.json",
             "BuildingBlocks": [],
             "SimulationParameters": []
-        },
-        {
-            "Id":  "Gentamicin rough",
-            "Path":  "Models/Gentamicin_mod.json",
-            "BuildingBlocks": [],
-            "SimulationParameters": []
-        },
-        {
-            "Id":  "Sotalol rough",
-            "Path":  "Models/Sotalol_mod.json",
-            "BuildingBlocks": [],
-            "SimulationParameters": []
-        },
-        {
-            "Id":  "Vancomycin rough",
-            "Path":  "Models/Vancomycin_mod.json",
-            "BuildingBlocks": [],
-            "SimulationParameters": []
-        }
+        }      
     ],
     "ObservedDataSets": [],
     "Plots": {
@@ -44,105 +26,65 @@
         "PlotSettings": {},
         "AllPlots": [
             {
-                "Project": "Gabapentin rough",
-                "Simulation": "Tjandrawinata 300mg Pop",
+                "Project": "Gabapentin",
+                "Simulation": "Blum Healthy 400 mg PO",
                 "SectionId": 311
             },
             {
-                "Project": "Gabapentin rough",
-                "Simulation": "Blum Stage 3 400mg PO Pop",
+                "Project": "Gabapentin",
+                "Simulation": "Blum CKD3 400 mg PO",
                 "SectionId": 312
             },
             {
-                "Project": "Gabapentin rough",
-                "Simulation": "Blum Stage 5 CKD Pop 400mg PO",
+                "Project": "Gabapentin",
+                "Simulation": "Blum CKD5 400 mg PO",
                 "SectionId": 312
             },
             {
-                "Project": "Acebutolol rough",
-                "Simulation": "Roux Healthy Population",
+                "Project": "Acebutolol",
+                "Simulation": "Roux Healthy 200 mg PO",
                 "SectionId": 321
             },
             {
-                "Project": "Acebutolol rough",
-                "Simulation": "CKD Pop",
+                "Project": "Acebutolol",
+                "Simulation": "Roux CKD 200 mg PO",
                 "SectionId": 322
             },
             {
-                "Project": "Atenolol rough",
-                "Simulation": "Wan Population 50mg PO",
+                "Project": "Atenolol",
+                "Simulation": "Kirch Healthy 100 mg PO",
                 "SectionId": 331
             },
             {
-                "Project": "Atenolol rough",
-                "Simulation": "Wan Population 100mg PO",
+                "Project": "Atenolol",
+                "Simulation": "Kirch CKD3 100 mg PO",
+                "SectionId": 332
+            },
+            {
+                "Project": "Atenolol",
+                "Simulation": "Kirch CKD4 100 mg PO",
+                "SectionId": 332
+            },
+            {
+                "Project": "Atenolol",
+                "Simulation": "Kirch CKD5 100 mg PO",
+                "SectionId": 332
+            },
+            {
+                "Project": "Atenolol",
+                "Simulation": "Sassard Healthy 100 mg PO",
                 "SectionId": 331
             },
             {
-                "Project": "Atenolol rough",
-                "Simulation": "Kirch 1980 Stage 3 Pop",
+                "Project": "Atenolol",
+                "Simulation": "Sassard CKD3 100 mg PO",
                 "SectionId": 332
             },
             {
-                "Project": "Atenolol rough",
-                "Simulation": "Kirch 1980 Stage 4 Pop",
+                "Project": "Atenolol",
+                "Simulation": "Sassard CKD4 100 mg PO",
                 "SectionId": 332
-            },
-            {
-                "Project": "Atenolol rough",
-                "Simulation": "Kirch 1980 Stage 5 Pop",
-                "SectionId": 332
-            },
-            {
-                "Project": "Atenolol rough",
-                "Simulation": "Sassard Stage 3 Pop 100mg PO",
-                "SectionId": 332
-            },
-            {
-                "Project": "Atenolol rough",
-                "Simulation": "Sassard Stage 4 Pop 100mg PO",
-                "SectionId": 332
-            },
-            {
-                "Project": "Gentamicin rough",
-                "Simulation": "Dume Pop",
-                "SectionId": 341
-            },
-            {
-                "Project": "Gentamicin rough",
-                "Simulation": "Ervin ESRD 1 mg/kg",
-                "SectionId": 342
-            },
-            {
-                "Project": "Gentamicin rough",
-                "Simulation": "Ervin ESRD 1.5 mg/kg IV",
-                "SectionId": 342
-            },
-            {
-                "Project": "Sotalol rough",
-                "Simulation": "Uematsu Population 100mg PO",
-                "SectionId": 361
-            },
-            {
-                "Project": "Sotalol rough",
-                "Simulation": "Uematsu Population 200mg PO",
-                "SectionId": 361
-            },
-            {
-                "Project": "Sotalol rough",
-                "Simulation": "Tjandramaga ESRD Pop",
-                "SectionId": 362
-            },
-            {
-                "Project": "Vancomycin rough",
-                "Simulation": "Blouin Population",
-                "SectionId": 371
-            },
-            {
-                "Project": "Vancomycin rough",
-                "Simulation": "Decker Population",
-                "SectionId": 372
-            }
+            }         
         ],
         "GOFMergedPlots": [],
         "ComparisonTimeProfilePlots": [],
@@ -216,80 +158,12 @@
                             "Content": "Content/Atenolol_CKD.md"
                         }
                     ]
-                },
-                {
-                    "Id": 34,
-                    "Title": "3.4 Gentamicin",
-                    "Content": "Content/Gentamicin_Introduction.md",
-                    "Sections": [
-                        {
-                            "Id": 341,
-                            "Title": "3.4.1 Gentamicin in a Healthy Population",
-                            "Content": "Content/Gentamicin_healthy.md"
-                        },
-                        {
-                            "Id": 342,
-                            "Title": "3.4.2 Gentamicin in a CKD Population",
-                            "Content": "Content/Gentamicin_CKD.md"
-                        }
-                    ]
-                },
-                {
-                    "Id": 35,
-                    "Title": "3.5 Pindolol",
-                    "Content": "Content/Pindolol_Introduction.md",
-                    "Sections": [
-                        {
-                            "Id": 351,
-                            "Title": "3.5.1 Pindolol in a Healthy Population",
-                            "Content": "Content/Pindolol_healthy.md"
-                        },
-                        {
-                            "Id": 352,
-                            "Title": "3.5.2 Pindolol in a CKD Population",
-                            "Content": "Content/Pindolol_CKD.md"
-                        }
-                    ]
-                },
-                {
-                    "Id": 36,
-                    "Title": "3.6 Sotalol",
-                    "Content": "Content/Sotalol_Introduction.md",
-                    "Sections": [
-                        {
-                            "Id": 361,
-                            "Title": "3.6.1 Sotalol in a healthy Population",
-                            "Content": "Content/Sotalol_healthy.md"
-                        },
-                        {
-                            "Id": 362,
-                            "Title": "3.6.2 Sotalol in a CKD Population",
-                            "Content": "Content/Sotalol_CKD.md"
-                        }
-                    ]
-                },
-                {
-                    "Id": 37,
-                    "Title": "3.7 Vancomycin",
-                    "Content": "Content/Vancomycin_Introduction.md",
-                    "Sections": [
-                        {
-                            "Id": 371,
-                            "Title": "3.7.1 Vancomycin in a healthy Population",
-                            "Content": "Content/Vancomycin_healthy.md"
-                        },
-                        {
-                            "Id": 372,
-                            "Title": "3.7.2 Vancomycin in a CKD Population",
-                            "Content": "Content/Vancomycin_CKD.md"
-                        }
-                    ]
                 }
             ]
         },
         {
-            "Id": 5,
-            "Title": "5 References",
+            "Id": 4,
+            "Title": "4 References",
             "Content": "Content/References.md"
         }
     ],
