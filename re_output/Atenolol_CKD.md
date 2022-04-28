@@ -1,0 +1,3 @@
+For the IV model, three populations, with target GFRs of 60 (30-90), 20 (10-30), and 5 (5-10), were created following the procedure described in section 2. Simulation results were compared to data reported in Kirch et al. 1980.<sup>53</sup> The results are reported in figures 3.3.3-5.
+
+For the oral model, two populations, with target GFRs of 54±4 and 16±4 mL/min/1.73 m<sup>2</sup>, were created following the procedure described in section 2. Simulation results were compared to data reported in Sassard et al. 1977<sup>66</sup>. The results are reported in figures 3.3.6 and 3.3.7.
