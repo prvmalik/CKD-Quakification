@@ -1,8 +1,8 @@
 rm(list = ls())
 library(ospsuite.reportingengine)
 workingDirectory <- getwd()
-reInputFolder <- file.path(workingDirectory, "re_input_new")
-reOutputFolder <- file.path(workingDirectory, "re_output_new")
+reInputFolder <- file.path(workingDirectory, "re_input")
+reOutputFolder <- file.path(workingDirectory, "re_output")
 configurationPlanName <- "report-configuration-plan"
 configurationPlanFile <- file.path(reInputFolder, paste0(configurationPlanName, ".json"))
 recordWorkflowTime <- TRUE

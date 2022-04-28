@@ -3,3 +3,5 @@ re_input*
 re_output*
 
 log-*.txt
+
+*.lock
