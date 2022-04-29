@@ -14,8 +14,9 @@ workflow$activateTasks("simulate")
 workflow$activateTasks("plotTimeProfiles")
 workflow$inactivateTasks("calculatePKParameters")
 workflow$inactivateTasks("plotDDIRatio")
-workflow$inactivateTasks("plotComparisonTimeProfile")
+workflow$activateTasks("plotComparisonTimeProfile")
 
 tictoc::tic()
 workflow$runWorkflow()
 tictoc::toc()
+
