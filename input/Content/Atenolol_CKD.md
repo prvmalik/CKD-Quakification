@@ -1,3 +1,13 @@
-For the IV model, three populations, with target GFRs of 60 (30-90), 20 (10-30), and 5 (5-10), were created following the procedure described in section 2. Simulation results were compared to data reported in Kirch et al. 1980.<sup>53</sup> The results are reported in figures 3.3.3-5.
+With the drug-specific parameters fixed, the healthy PBPK model was translated to a CKD PBPK model CKD according to the defined method. 
 
-For the oral model, two populations, with target GFRs of 54±4 and 16±4 mL/min/1.73 m<sup>2</sup>, were created following the procedure described in section 2. Simulation results were compared to data reported in Sassard et al. 1977<sup>66</sup>. The results are reported in figures 3.3.6 and 3.3.7.
+A population with Stage 3 CKD was created according to the demographic parameters of the target population presented in the study of Kirch 1981 (eGFR 37-60 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of atenolol after multiple oral doses of 100 mg once daily for 7 days in this target population is presented in Figure 3.3.4.
+
+A population with Stage 4 CKD was created according to the demographic parameters of the target population presented in the study of Kirch 1981 (eGFR 17-30 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of atenolol after multiple oral doses of 100 mg once daily for 7 days in this target population is presented in Figure 3.3.5.
+
+A population with Stage 5 CKD was created according to the demographic parameters of the target population presented in the study of Kirch 1981 (eGFR 5-9 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of atenolol after multiple oral doses of 100 mg once daily for 7 days in this target population is presented in Figure 3.3.6.
+
+A population with Stage 3 CKD was created according to the demographic parameters of the target population presented in the study of Sassard 1977 (eGFR 46-60 mL/min/1.73m<sup>2</sup>). Simulation of the whole blood pharmacokinetics of atenolol after a single oral dose of 100 mg in this target population is presented in Figure 3.3.7.
+
+A population with Stage 4-5 CKD was created according to the demographic parameters of the target population presented in the study of Sassard 1977 (eGFR 8-24 mL/min/1.73m<sup>2</sup>). Simulation of the whole blood pharmacokinetics of atenolol after a single oral dose of 100 mg in this target population is presented in Figure 3.3.8.
+
+A population with Stage 3-4 CKD was created according to the demographic parameters of the target population presented in the study of Wan 1979 (eGFR 15-42 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of atenolol after a single oral dose of 50 mg in this target population is presented in Figure 3.3.9.
