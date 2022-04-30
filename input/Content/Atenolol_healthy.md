@@ -85,4 +85,4 @@ Atenolol is predominantly absorbed in the ileum.<sup>58-61</sup> The transporter
 
 <sup>c</sup>Mean ± SE reported.
 
-Figures 3.3.1, 3.3.2, and 3.3.3 demonstrate the simulated oral model PK profiles in a population compared against observed data from Wan 1979, Kirch 1981, and Sassard 1977, respectively.<sup>56</sup>.
+Figures 3.3.1, 3.3.2, and 3.3.3 demonstrate the simulated oral model PK profiles in a population compared against observed data from Wan 1979, Kirch 1981, and Sassard 1977, respectively.<sup>REF,REF,REF</sup>.
