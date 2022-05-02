@@ -8,10 +8,6 @@
       "Category": "Blum",
       "Parameters": [
         {
-          "Path": "Organism|Bone|Interstitial|SLC7A5|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
           "Path": "Organism|Bone|Intracellular|SLC7A5|Relative expression",
           "Value": 0.5695906433
         },
@@ -20,19 +16,7 @@
           "Value": 0.1099415205
         },
         {
-          "Path": "Organism|Fat|Interstitial|SLC7A5|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Gonads|Interstitial|SLC7A5|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
           "Path": "Organism|Gonads|Intracellular|SLC7A5|Relative expression",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Heart|Interstitial|SLC7A5|Fraction expressed basolateral",
           "Value": 1.0
         },
         {
@@ -42,10 +26,6 @@
         {
           "Path": "Organism|Kidney|Intracellular|SLC7A5|Relative expression",
           "Value": 0.0312865497
-        },
-        {
-          "Path": "Organism|LargeIntestine|Interstitial|SLC7A5|Fraction expressed basolateral",
-          "Value": 1.0
         },
         {
           "Path": "Organism|LargeIntestine|Intracellular|SLC7A5|Relative expression",
@@ -60,36 +40,16 @@
           "Value": 0.0109356725
         },
         {
-          "Path": "Organism|Lung|Interstitial|SLC7A5|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
           "Path": "Organism|Lung|Intracellular|SLC7A5|Relative expression",
           "Value": 0.3140350877
-        },
-        {
-          "Path": "Organism|Muscle|Interstitial|SLC7A5|Fraction expressed basolateral",
-          "Value": 1.0
         },
         {
           "Path": "Organism|Muscle|Intracellular|SLC7A5|Relative expression",
           "Value": 0.1760233918
         },
         {
-          "Path": "Organism|Pancreas|Interstitial|SLC7A5|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
           "Path": "Organism|Pancreas|Intracellular|SLC7A5|Relative expression",
           "Value": 0.0248538012
-        },
-        {
-          "Path": "Organism|Skin|Interstitial|SLC7A5|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|SmallIntestine|Interstitial|SLC7A5|Fraction expressed basolateral",
-          "Value": 1.0
         },
         {
           "Path": "Organism|SmallIntestine|Intracellular|SLC7A5|Relative expression",
@@ -116,16 +76,8 @@
           "Value": 0.2590643275
         },
         {
-          "Path": "Organism|Spleen|Interstitial|SLC7A5|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
           "Path": "Organism|Spleen|Intracellular|SLC7A5|Relative expression",
           "Value": 0.1198830409
-        },
-        {
-          "Path": "Organism|Stomach|Interstitial|SLC7A5|Fraction expressed basolateral",
-          "Value": 1.0
         },
         {
           "Path": "Organism|Stomach|Intracellular|SLC7A5|Relative expression",
@@ -920,7 +872,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Gabapentin\nBlum Healthy 400 mg PO\n2022-04-04 14:15"
+          "OriginText": "Gabapentin\nBlum Healthy 400 mg PO\n2022-04-05 14:06"
         }
       ]
     },
@@ -1107,7 +1059,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Gabapentin\nBlum CKD3 400 mg PO\n2022-04-04 14:14"
+          "OriginText": "Gabapentin\nBlum CKD3 400 mg PO\n2022-04-05 14:06"
         }
       ]
     },
@@ -1294,7 +1246,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Gabapentin\nBlum CKD5 400 mg PO\n2022-04-04 14:14"
+          "OriginText": "Gabapentin\nBlum CKD5 400 mg PO\n2022-04-05 14:06"
         }
       ]
     }
@@ -1344,14 +1296,11 @@
         {
           "Name": "Concentration ",
           "QuantityInfo": {
-            "Name": "Concentration ",
             "Path": "Blum_CKD5|ObservedData|Peripheral Venous Blood|Plasma|Gabapentin|Concentration "
           },
           "DataInfo": {
             "Origin": "Observation",
             "AuxiliaryType": "Undefined",
-            "Date": "2020-01-28T18:07:56.7675413-05:00",
-            "Source": "BlumCKD.Sheet1.1.Concentration [mg/L]",
             "MolWeight": 171.2
           },
           "Values": [
@@ -1375,15 +1324,12 @@
       "BaseGrid": {
         "Name": "Time ",
         "QuantityInfo": {
-          "Name": "Time ",
           "Path": "Blum_CKD5|Time ",
           "Type": "Time"
         },
         "DataInfo": {
           "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined",
-          "Date": "2020-01-28T18:07:56.7675413-05:00",
-          "Source": "BlumCKD.Sheet1.1.Time [h]"
+          "AuxiliaryType": "Undefined"
         },
         "Values": [
           6.5,
@@ -1447,14 +1393,11 @@
         {
           "Name": "Concentration ",
           "QuantityInfo": {
-            "Name": "Concentration ",
             "Path": "Blum_Healthy|ObservedData|Peripheral Venous Blood|Plasma|Gabapentin|Concentration "
           },
           "DataInfo": {
             "Origin": "Observation",
             "AuxiliaryType": "Undefined",
-            "Date": "2020-01-28T18:07:56.7675413-05:00",
-            "Source": "BlumCKD.Sheet1.2.Concentration [mg/L]",
             "MolWeight": 171.2
           },
           "Values": [
@@ -1471,15 +1414,12 @@
       "BaseGrid": {
         "Name": "Time ",
         "QuantityInfo": {
-          "Name": "Time ",
           "Path": "Blum_Healthy|Time ",
           "Type": "Time"
         },
         "DataInfo": {
           "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined",
-          "Date": "2020-01-28T18:07:56.7675413-05:00",
-          "Source": "BlumCKD.Sheet1.2.Time [h]"
+          "AuxiliaryType": "Undefined"
         },
         "Values": [
           8.086705,
@@ -1536,14 +1476,11 @@
         {
           "Name": "Concentration ",
           "QuantityInfo": {
-            "Name": "Concentration ",
             "Path": "Blum_CKD3|ObservedData|Peripheral Venous Blood|Plasma|Gabapentin|Concentration "
           },
           "DataInfo": {
             "Origin": "Observation",
             "AuxiliaryType": "Undefined",
-            "Date": "2020-01-28T18:07:56.7675413-05:00",
-            "Source": "BlumCKD.Sheet1.3.Concentration [mg/L]",
             "MolWeight": 171.2
           },
           "Values": [
@@ -1564,15 +1501,12 @@
       "BaseGrid": {
         "Name": "Time ",
         "QuantityInfo": {
-          "Name": "Time ",
           "Path": "Blum_CKD3|Time ",
           "Type": "Time"
         },
         "DataInfo": {
           "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined",
-          "Date": "2020-01-28T18:07:56.7675413-05:00",
-          "Source": "BlumCKD.Sheet1.3.Time [h]"
+          "AuxiliaryType": "Undefined"
         },
         "Values": [
           5.0,

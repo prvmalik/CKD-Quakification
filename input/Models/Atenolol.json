@@ -8,55 +8,7 @@
       "Category": "Standard",
       "Parameters": [
         {
-          "Path": "Organism|Bone|Interstitial|RenalCL|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Fat|Interstitial|RenalCL|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Gonads|Interstitial|RenalCL|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Heart|Interstitial|RenalCL|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
           "Path": "Organism|Kidney|Intracellular|RenalCL|Relative expression",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|LargeIntestine|Interstitial|RenalCL|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Lung|Interstitial|RenalCL|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Muscle|Interstitial|RenalCL|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Pancreas|Interstitial|RenalCL|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Skin|Interstitial|RenalCL|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|SmallIntestine|Interstitial|RenalCL|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Spleen|Interstitial|RenalCL|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Stomach|Interstitial|RenalCL|Fraction expressed basolateral",
           "Value": 1.0
         },
         {
@@ -319,46 +271,6 @@
           "Unit": "h"
         },
         {
-          "Path": "Organism|Bone|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Fat|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Gonads|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Heart|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|LargeIntestine|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Lung|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Muscle|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Pancreas|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Skin|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|SmallIntestine|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
           "Path": "Organism|SmallIntestine|Mucosa|LowerIleum|Intracellular|Intestine1|Fraction expressed apical",
           "Value": 0.0,
           "ValueOrigin": {
@@ -367,14 +279,6 @@
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|LowerIleum|Intracellular|Intestine1|Relative expression",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Spleen|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Stomach|Interstitial|Intestine1|Fraction expressed basolateral",
           "Value": 1.0
         }
       ],
@@ -607,55 +511,7 @@
       "Category": "Standard",
       "Parameters": [
         {
-          "Path": "Organism|Bone|Interstitial|PMAT|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Fat|Interstitial|PMAT|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Gonads|Interstitial|PMAT|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Heart|Interstitial|PMAT|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|LargeIntestine|Interstitial|PMAT|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Lung|Interstitial|PMAT|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Muscle|Interstitial|PMAT|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Pancreas|Interstitial|PMAT|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Skin|Interstitial|PMAT|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|SmallIntestine|Interstitial|PMAT|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
           "Path": "Organism|SmallIntestine|Mucosa|LowerIleum|Intracellular|PMAT|Relative expression",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Spleen|Interstitial|PMAT|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Stomach|Interstitial|PMAT|Fraction expressed basolateral",
           "Value": 1.0
         },
         {
