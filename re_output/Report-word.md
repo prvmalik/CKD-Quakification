@@ -82,7 +82,11 @@ In order to generate a virtual population of subjects with CKD, the user must sp
 # Compounds
 
 
-The PBPK model outlined above was evaluated on seven compounds, comparing the predicted pharmacokinetics to clinical pharmacokinetic data. Each subsection that follows will contain an introduction to the compound under consideration, a description of the PBPK model in a healthy population, and the subsequent extension to a population with CKD.
+The method to generate virtual populatoins with CKD was qualified by testing its predictive performance when used in combination with PBPK models for healthy subjects in order to predict the pharmacokinetics of drugs in patients with CKD from literature.
+
+The method was evaluated using three compounds and first considers subjects with CKD (Stage 3 to Stage 5, end-stage renal disease) who are not on dialysis. The three compounds evaluated for the first qualification are gabapentin, acebutolol, and atenolol. This evaluation replicates in part the work published by Malik et al., 2020. The objective is to determine success of the population generation method by comparing the predicted pharmacokinetics in CKD to clinical pharmacokinetic data from literature. 
+
+Each subsection that follows will contain an introduction to the test compound, a description of the healthy PBPK model development, and the subsequent translation to a population with CKD.
 
 
 
@@ -115,7 +119,7 @@ Gabapentin is not metabolized and completely renally cleared as unchanged drug b
 
 
 \newpage
-**Table 1. Physicochemical properties and ADME of gabapentin for oral model construction**
+**Table 1. Physicochemical properties and ADME of gabapentin for the final oral model**
 
 
 | **Physicochemical properties**    |                             |
@@ -244,7 +248,7 @@ Acebutolol undergoes extensive first pass metabolism in the liver by the two enz
 
 
 \newpage
-**Table 1. Physicochemical properties and ADME of acebutolol for IV-oral model construction**
+**Table 1. Physicochemical properties and ADME of acebutolol for the final IV-oral model**
 
 
 | **Physicochemical properties**    |                             |
@@ -372,7 +376,7 @@ Atenolol is a substrate of the organic cation transporter 2 (OCT2/SLC22A2) on th
 ##### IV model
 
 \newpage
-**Table 1. Physicochemical properties and ADME of atenolol for IV model construction**
+**Table 1. Physicochemical properties and ADME of atenolol for the final IV model**
 
 
 | **Physicochemical properties**    |                             |
@@ -424,7 +428,7 @@ The PK-Sim Standard and Rodgers and Rowland methods to calculate partition coeff
 The oral PBPK model for the atenolol tablet was developed using literature values for the dissolution profile and solubility (see **Table 3**). A Weibull function was used to describe the dissolution profile.
 
 \newpage
-**Table 3. Oral absorption parameters for atenolol oral model construction**
+**Table 3. Oral absorption parameters for the final atenolol oral model**
 
 
 |   |  |

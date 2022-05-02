@@ -10,7 +10,11 @@ workflow <- loadQualificationWorkflow(
   workflowFolder = reOutputFolder,
   configurationPlanFile = configurationPlanFile
 )
-workflow$activateTasks("simulate")
+
+#' Remove watermark
+workflow$setWatermark("")
+
+workflow$inactivateTasks("simulate")
 workflow$activateTasks("plotTimeProfiles")
 workflow$inactivateTasks("calculatePKParameters")
 workflow$inactivateTasks("plotDDIRatio")
