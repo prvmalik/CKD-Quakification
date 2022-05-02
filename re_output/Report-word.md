@@ -17,11 +17,13 @@ abstract: |
 # Introduction
 
 
-The presented qualification report evaluates the the OSP suite's performance at predicting drug clearance in patients with chronic kidney disease (CKD).
+The presented qualification report performs simulations of drug disposition and pharmacokinetics in subjects with chronic kidney disease (CKD) to qualify the parameterization of the foundational anatomy and physiology parameters for virtual populations with CKD in the Open Systems Pharmacology (OSP) Suite.
 
-Patients with impaired kidney function will often require different dosing regimens than their healthy counterparts. In the absence of clinical data, predicting the correct dosing regimens is challenging, owing in part to the fact that CKD is a systemic and multifaceted disease that alters many body systems. To address this, Malik et al. (2020)<sup>1</sup> developed a whole-body mechanistic approach to predict pharmacokinetics in patients with CKD. Their method has now been implemented in the OPS suite, and is the subject of the current evaluation.
+CKD is defined as a reduction in kidney function as approximated by the estimated glomerular filtration rate (eGFR) below 60 mL/min/1.73m<sup>2</sup> for at least 3 months. CKD is a systemic and multifaceted disease that alters many body systems beyond the glomerular filtration rate. As summarized by Malik et al. (2020),<sup>1</sup> the disease can affect anatomy and physiology parameters such as kidney volume, kidney blood flow, plasma protein binding, hematocrit, gastric emptying time, small intestinal transit time, and colonic transit time. These quantitative changes have been implemented into the Open Systems Pharmacology Suite for the purpose of building mechanistic models of drug disposition, termed physiologically based pharmacokinetic (PBPK) models. The present implementation considers subjects with CKD from Stage 3 to Stage 5 (end-stage renal disease) who have not yet begun treatment with dialysis.
 
-This report evaluates the performance of the virtual CKD population on 7 compounds, replicating the evaluation done in the original paper by Malik et al. Section 2 describes the algorithm used to generate CKD populations. Section 3 evaluates the predicted effects of CKD on drug clearance for seven compounds: Gabapentin, Acebutolol, Atenolol, Gentamicin, Pindolol, Sotalol, and Vancomycin. Evaluation for each compound is split into two steps: an initial model calibration against a healthy population, followed by an extension to a population suffering from CKD. For a more detailed analysis, see the supplementary information from Malik et al.
+Beyond foundational anatomy and physiology parameters, the disease can also affect the activities or expression of metabolic enzymes (such as CYP3A4) and active drug transporters (such as the organic anion transporters, OAT1 and OAT3). Because of the varied and conflicting literature on the effects of the disease on numerous enzymes and transporters, the present parameterization is concerned only with foundational anatomy and physiology parameters that would be consistently applicable to all mechanistic simulations in CKD. When building a PBPK model for subjects with CKD, the OSP user is recommended to consult literature specific to the effect of disease on enzymes and transporters that are most relevant to the disposition of the drug in question and adapt the model parameters (e.g., activity of the enzyme) accordingly. 
+
+This report replicates in part the evaluation of the parameterization done by Malik et al. Section 2 describes the algorithm used to generate CKD populations. Section 3 evaluates the predicted effects of CKD on pharmacokinetics for three compounds: Gabapentin, Acebutolol, Atenolol. Gabapentin is selected as an index compound that is predominantly eliminated by glomerular filtration. Atenolol additionally undergoes active tubular secretion through the organic cation transporter (OCT) system, one system whose function is largely conserved in the disease. Acebutolol also undergoes secretion through the OCT system, but has a non-renal component (hepatic metabolism) that is suggested to be unaffected by the disease. Evaluation for each compound is split into two steps: an initial model calibration against a healthy population, followed by an extension to populations of subjects with relevant staging of CKD.
 
 
 
@@ -33,7 +35,7 @@ This report evaluates the performance of the virtual CKD population on 7 compoun
 # CKP Population Development
 
 
-In order to generate a virtual population suffering from CKD, the user must specify a target glomerular filtration rate (GFR). From there, PK-Sim will first generate a healthy population using the standard algorithm, and modify the physiological parameters of the simulated individuals to replicate a realistic CKD phenotype. The details of this process are outlined in Figure 2, with references to Figure 1, and Tables 1 and 2. For a complete description, see Malik et al.<sup>1</sup>
+In order to generate a virtual population of subjects with CKD, the user must specify a target range for glomerular filtration rate (GFR) (minimum to maximum). PK-Sim will first generate a healthy population using the standard algorithm - including the effects of aging as appropriate - and modify the physiological parameters of the simulated individuals to replicate a realistic CKD phenotype. The details of this process are outlined in Figure 2, with references to Figure 1, and Tables 1 and 2. For a complete description, see Malik et al.<sup>1</sup>
 
 |![test image](images/fig1(paper).PNG)|
 |:-:|
@@ -96,7 +98,7 @@ Gabapentin is structurally related to the neurotransmitter, gamma aminobutyric a
 
 Gabapentin is available as a capsule, tablet, and oral solution. It is a BCS class 3 drug that is absorbed from the intestines by a process that is mediated by the active transporter, large neutral amino acid transporter 1 (LAT1, SLC7A5). This process is known to be saturable, with the bioavailability of gabapentin to be inversely proportional to the administered dose. The absolute oral bioavailability of a three times per day (tid) dosing regimen of 900, 1200, 2400, 3600, 4800 mg per day was 60, 47, 34, 33 and 27%, respectively.<sup>21</sup> The absolute bioavailability of the lowest dose of gabapentin tested (100 mg Q8h) was 80%.<sup>22</sup>
 
-Gabapentin is not metabolized and completely renally cleared as unchanged drug. While gabapentin is a substrate of the OCT2 influx transporter in kidney, co-administration in humans with the OCT2 inhibitor Cimetidine only reduced oral clearance of gabapentin by 14%.<sup>21</sup> This suggests that renal clearance is likely best described by the passive process of glomerular filtration only. Gabapentin has a volume of distribution of 58 ± 6 L (mean ± SD) with a half-life of 5-7 hours.<sup>21</sup> Additionally, it is 97% fraction unbound to plasma proteins.
+Gabapentin is not metabolized and completely renally cleared as unchanged drug by glomerular filtration at the maximal rate. While gabapentin is a substrate of the OCT2 influx transporter in kidney, co-administration in humans with the OCT2 inhibitor C\cimetidine only reduced oral clearance of gabapentin by 14%.<sup>21</sup> This suggests that renal clearance is likely best described by the passive process of glomerular filtration only. Gabapentin has a volume of distribution of 58 ± 6 L (mean ± SD) with a half-life of 5-7 hours.<sup>21</sup> Additionally, it is 97% unbound in plasma.
 
 
 
@@ -108,7 +110,9 @@ Gabapentin is not metabolized and completely renally cleared as unchanged drug. 
 ### Gabapentin in a Healthy Population
 
 
-A population of individuals based on Tjandrawinata 2014 subjects was defined using the physiological database of PK-Sim.<sup>33,2</sup> **Table 1** presents the drug-specific parameters of gabapentin and the values used for the oral administration model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2**.
+\newpage
+**Table 1** presents the drug-specific parameters of gabapentin and the values used for the oral administration model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2**.
+
 
 \newpage
 **Table 1. Physicochemical properties and ADME of gabapentin for oral model construction**
@@ -163,7 +167,7 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 
 <sup>c</sup>Approximated based on the reported range of BMI, 18.03 – 24.99 kg/m<sup>2</sup>.
 
-Figure 3.1.1 demonstrates the simulated oral model PK profiles in a healthy population compared against observed Tjandrawinata 2014 study data.<sup>33</sup>
+Figure 3.1.1 demonstrates the simulated oral model PK profiles in a healthy population compared against observed Blum 1994 study data.<sup>REF</sup>
 
 
 
@@ -185,7 +189,11 @@ Figure 3.1.1 demonstrates the simulated oral model PK profiles in a healthy popu
 ### Gabapentin in a CKD Population
 
 
-Using the model from the healthy population from the previous section, two new populations, with target GFRs of 45 (30-59) and 15 (0-30) mL/min/1.73 m<sup>2</sup>, were created following the procedure described in section 2. Simulation results were compared to data reported in Blum et al. 1994<sup>34</sup>. The results are reported in figures 3.1.2 and 3.1.3.
+With the drug-specific parameters fixed, the healthy PBPK model was translated to a CKD PBPK model CKD according to the defined method. 
+
+A population with Stage 3 CKD was created according to the demographic parameters of the target population presented in the study of Roux 1980 (eGFR 30-59 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of gabapentin after a single oral dose of 400 mg in this target population is presented in Figure 3.1.2.
+
+A population with Stage 4-5 CKD was created according to the demographic parameters of the target population presented in the study of Roux 1980 (eGFR 1-30 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of gabapentin after a single oral dose of 400 mg in this target population is presented in Figure 3.1.3.
 
 
 
@@ -231,7 +239,9 @@ Acebutolol undergoes extensive first pass metabolism in the liver by the two enz
 ### Acebutolol in a Healthy Population
 
 
-A population of individuals based on Roux 1980 subjects was defined using the physiological database of PK-Sim.<sup>37,2</sup> **Table 1** presents the drug-specific parameters of acebutolol and the values used for the combined IV-oral model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2**.
+\newpage
+**Table 1** presents the drug-specific parameters of acebutolol and the values used for the combined IV-oral model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2**.
+
 
 \newpage
 **Table 1. Physicochemical properties and ADME of acebutolol for IV-oral model construction**
@@ -248,8 +258,8 @@ A population of individuals based on Roux 1980 subjects was defined using the ph
 | Partition coefficient                      | Rodgers and Rowland |
 | Cell permeability                          | PK-Sim Standard     |
 | Total clearance                            | 615 ± 59 mL/min<sup>42</sup>     |
-| KMET concentration                         | log-normally distributed with mean 1.0 µM and geometric SD 1.40 µM   |
-| KMET specific clearance                    | 0.68 1/min          |
+| CYP concentration                          | log-normally distributed with mean 1.0 µM and geometric SD 1.40 µM   |
+| CYP specific clearance                     | 0.68 1/min          |
 | OCT concentration                          | normally distributed with mean 1.0 µM and SD 0.20 µM <sup>47</sup>             |
 | OCT K<sub>m</sub>                          |  100 µM |
 | OCT In vitro V<sub>max</sub>/transporter   | 35.31 µM/min |
@@ -265,14 +275,14 @@ A population of individuals based on Roux 1980 subjects was defined using the ph
 | Intestine 2 V<sub>max</sub>                | 157.34 µM/min |
 | Specific intestinal permeability           | 1.48E-6 cm/min (PK-Sim calculated) |
 
-Since acebutolol is significantly metabolized by the liver, the expression of the non-specific enzyme processes, referred to as KMET throughout this report, were added with a first order intrinsic clearance process.
+Since acebutolol is significantly metabolized by the liver, the expression of the non-specific enzyme processes, referred to as CYP throughout this report, were added with a first order intrinsic clearance process.
 
-Acebutolol undergoes renal transportation via MATE proteins (MATE1, MATE2/2-K) and OCT proteins (OCT2/SLC22A2). The OCT2 proteins draw acebutolol through the basolateral side of the proximal tubule cells and the MATE proteins excrete the drug into the urine from the apical side of the proximal tubule cells. The kinetics of the two transporters are difficult to identify individually as there is no in vitro data. However, it was assumed that acebutolol’s efflux is rate limited by MATE proteins and that the $\text{Permeability\ x\ Surface\ Area}$ product was sufficiently fast enough to populate acebutolol in the renal epithelium. Therefore, the unknown kinetics of transport proteins were simplified into one average efflux transport protein which was represented on the apical side of the kidney. This simplified process of the OCT transport system is referred to as OCT throughout this report. The process followed active transport Michaelis-Menten kinetics and the K<sub>m</sub> of OCT was fixed at 100 µM.
+Acebutolol undergoes renal transportation via MATE proteins (MATE1, MATE2/2-K) and OCT proteins (OCT2/SLC22A2). The OCT2 proteins draw acebutolol through the basolateral side of the proximal tubule cells and the MATE proteins excrete the drug into the urine from the apical side of the proximal tubule cells. The kinetics of the two transporters are difficult to identify individually as there is no in vitro data. However, it was assumed that acebutolol’s efflux is rate limited by MATE proteins and that the Permeability x Surface Area product was sufficiently fast enough to populate acebutolol in the renal epithelium. Therefore, the unknown kinetics of transport proteins were simplified into one average efflux transport protein which was represented on the apical side of the kidney. This simplified process of the OCT transport system is referred to as OCT throughout this report. The process followed active transport Michaelis-Menten kinetics and the K<sub>m</sub> of OCT was fixed at 100 µM.
 
-The acebutolol oral formulation was developed assuming high solubility and fast dissolution based on its hydrophilicity (see **Table 1**). A Weibull function was used to describe the dissolution profile. The intestinal transporter-mediated uptake of acebutolol is likely driven by the influx of a transporter system, referred to as Intestine 2, that is located on the apical membrane of the caecum. Segment-dependent absorption was modeled by adding a fast efflux transporter to the basolateral side of the caecum, referred to as Intestine 1. Intestine 2 was added to the apical membrane of the cecum and its K<sub>m</sub> was fixed at 5000 µM to allow for linear kinetics while V<sub>max</sub> was optimized.
+The acebutolol oral formulation was developed assuming high solubility and fast dissolution based on its hydrophilicity (see **Table 1**). A Weibull function was used to describe the dissolution profile. The intestinal transporter-mediated uptake of acebutolol is likely driven by the influx of a transporter system, referred to as Intestine 2, that is located on the apical membrane of the caecum. Segment-dependent absorption was modeled by adding a fast efflux transporter to the basolateral side of the caecum, referred to as Intestine 1. Intestine 2 was added to the apical membrane of the caecum and its K<sub>m</sub> was fixed at 5000 µM to allow for linear kinetics while V<sub>max</sub> was optimized.
 
 \newpage
-**Table 2** presents the acebutolol datasets used for building the combined IV-oral model. The optimized KMET specific clearance, OCT V<sub>max</sub>, Intestine 2 V<sub>max</sub>, and specific intestinal permeability values are presented in **Table 1**.
+**Table 2** presents the acebutolol datasets used for building the combined IV-oral model. The optimized CYP specific clearance, OCT V<sub>max</sub>, Intestine 2 V<sub>max</sub>, and specific intestinal permeability values are presented in **Table 1**.
 
 
 The estimated fraction excreted to urine of 12% approximated the observed value of 15% measured at 70 hours after oral administration.<sup>37,43,44</sup> In contrast, the estimated fraction excreted to urine of 21% slightly underestimated the observed value of 35% measured at 48 hours after IV bolus administration.<sup>35,42</sup>
@@ -315,7 +325,9 @@ Figure 3.2.1 demonstrate the simulated oral model PK profiles in a healthy popul
 ### Acebutolol in a CKD Population
 
 
-Using the model from the healthy population from the previous section, three new populations, with target GFRs of 46 (32-56), 20 (16-26), and 9 (6-14) mL/min/1.73 m<sup>2</sup>, were created following the procedure described in section 2. Simulation results were compared to data reported in Roux et al. 1980<sup>37</sup>. There was very little difference in the predicted plasma concentrations across each of the three groups, and so for the purposes of this evaluation we have combined the three into a single population. The results are reported in figure 3.2.2.
+With the drug-specific parameters fixed, the healthy PBPK model was translated to a CKD PBPK model CKD according to the defined method. 
+
+A population with Stage 3-5 CKD was created according to the demographic parameters of the target population presented in the study of Roux 1980 (eGFR 6-56 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of acebutolol after a single oral dose of 200 mg in this target population is presented in Figure 3.2.2.
 
 
 
@@ -337,11 +349,11 @@ Using the model from the healthy population from the previous section, three new
 ## Atenolol
 
 
-Atenolol is a beta-selective beta-adrenergic receptor blocking agent that does not have membrane stabilizing or intrinsic sympathomimetic activities. It is indicated for hypertension, angina pectoris due to coronary atherosclerosis, and acute myocardial infarction. Atenolol is 6-16% bound to proteins in plasma.<sup>48</sup> The elimination half-life of atenolol from plasma is 6-7 hours in healthy adults.
+Atenolol is a beta-selective beta-adrenergic receptor blocking agent. It is indicated for hypertension, angina pectoris due to coronary atherosclerosis, and acute myocardial infarction. Atenolol is 6-16% bound to proteins in plasma.<sup>48</sup> The elimination half-life of atenolol from plasma is 6-7 hours in healthy adults.
 
-Taken orally, atenolol is classified as a BCS Class III drug (low permeability, high solubility) with incomplete absorption in humans. It undergoes little or no metabolism by the liver, and the portion that is absorbed is mainly eliminated by renal excretion.<sup>49</sup> Following oral administration, 50-60% of atenolol is recovered in urine.<sup>49</sup> These findings suggested that atenolol is not fully absorbed in the gastrointestinal tract and has a bioavailability of approximately 50%.<sup>49</sup>
+Taken orally, atenolol is classified as a BCS Class III drug (low permeability, high solubility) with incomplete absorption in humans. It undergoes little or no metabolism by the liver, and the portion that is absorbed is mainly eliminated by renal excretion with an active tubular secretion component.<sup>49</sup> Following oral administration, 50-60% of the dose is recovered in urine.<sup>49</sup> These findings suggested that atenolol is not fully absorbed in the gastrointestinal tract and has a bioavailability of approximately 50%.<sup>49</sup>
 
-Atenolol is a substrate and an inhibitor for the organic cation transporter 2 (OCT2/SLC22A2) on the basolateral side of tubular cells and is a substrate for the multidrug and toxic compound extrusion proteins (MATE1, MATE2/2-K) on the apical side.<sup>50</sup>
+Atenolol is a substrate of the organic cation transporter 2 (OCT2/SLC22A2) on the basolateral side of renal tubular epithelial cells and is a substrate for the multidrug and toxic compound extrusion proteins (MATE1, MATE2/2-K) on the apical side.<sup>50</sup>
 
 
 
@@ -353,7 +365,9 @@ Atenolol is a substrate and an inhibitor for the organic cation transporter 2 (O
 ### Atenolol in a Healthy Population
 
 
-A population of individuals based on Wan 1979 subjects was defined using the physiological database of PK-Sim.<sup>56,2</sup> **Table 1** and **Table 3** present the drug-specific parameters of atenolol and the values used for the IV and Oral administration models. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2** and **Table 4**.
+\newpage
+**Table 1** and **Table 3** present the drug-specific parameters of atenolol and the values used for the IV and Oral administration models. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2** and **Table 4**.
+
 
 ##### IV model
 
@@ -378,7 +392,7 @@ A population of individuals based on Wan 1979 subjects was defined using the phy
 | GFR fraction                                 | 1.0 |
 
 
-Atenolol undergoes renal transportation via MATE proteins (MATE1, MATE2/2-K) and OCT proteins (OCT2/SLC22A2).<sup>50</sup> The OCT2 proteins draw atenolol through the basolateral side of the proximal tubule cells and the MATE proteins excrete the drug into the urine from the apical side of the proximal tubule cells. The kinetics of the two transporters are difficult to identify individually. However, it was assumed that atenolol’s efflux is rate limited by MATE proteins and that the $\text{Permeability\ x\ Surface\ Area}$ product was sufficiently fast enough to populate atenolol in the renal epithelium. Therefore, the unknown kinetics of transport proteins were simplified into one net efflux transport protein which was represented on the apical side of the kidney. This simplified process of the OCT transport system is referred to as OCT throughout this report. To allow the process to follow linear kinetics, the K<sub>m</sub> of OCT was fixed at a high value (200 µM).<sup>51</sup>
+Atenolol undergoes renal transportation via MATE proteins (MATE1, MATE2/2-K) and OCT proteins (OCT2/SLC22A2).<sup>50</sup> The OCT2 proteins draw atenolol through the basolateral side of the proximal tubule cells and the MATE proteins excrete the drug into the urine from the apical side of the proximal tubule cells. The kinetics of the two transporters are difficult to identify individually. However, it was assumed that atenolol’s efflux is rate limited by MATE proteins and that the Permeability x Surface Area product was sufficiently fast enough to populate atenolol in the renal epithelium. Therefore, the unknown kinetics of transport proteins were simplified into one net efflux transport protein which was represented on the apical side of the kidney. This simplified process of the OCT transport system is referred to as OCT throughout this report. To allow the process to follow linear kinetics, the K<sub>m</sub> of OCT was fixed at a high value (200 µM).<sup>51</sup>
 
 The PK-Sim Standard and Rodgers and Rowland methods to calculate partition coefficients were evaluated with logP and OCT V<sub>max</sub> for optimization to the IV datasets describing atenolol disposition. The observed PK data were best described by using the PK-Sim Standard method for partition coefficient. The PK-Sim Standard method was also used for the calculation of cell permeability.
 
@@ -450,7 +464,7 @@ Atenolol is predominantly absorbed in the ileum.<sup>58-61</sup> The transporter
 
 <sup>c</sup>Mean ± SE reported.
 
-Figures 3.3.1 and 3.3.2 demonstrate the simulated oral model PK profiles in a population compared against observed Wan 1979, 50 mg PO and 100 mg PO study data, respectively.<sup>56</sup>.
+Figures 3.3.1, 3.3.2, and 3.3.3 demonstrate the simulated oral model PK profiles in a population compared against observed data from Wan 1979, Kirch 1981, and Sassard 1977, respectively.<sup>REF,REF,REF</sup>.
 
 
 
@@ -475,6 +489,16 @@ Figures 3.3.1 and 3.3.2 demonstrate the simulated oral model PK profiles in a po
 
 
 
+\newpage
+![Figure 8: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/011_section_Atenolol_Healthy/13_time_profile_plot_Atenolol_Wan_Healthy_50mg_PO.png)
+
+
+<br>
+<br>
+
+
+
+
 
 <a id="Atenolol_CKD"></a>
 
@@ -482,35 +506,25 @@ Figures 3.3.1 and 3.3.2 demonstrate the simulated oral model PK profiles in a po
 ### Atenolol in a CKD Population
 
 
-For the IV model, three populations, with target GFRs of 60 (30-90), 20 (10-30), and 5 (5-10), were created following the procedure described in section 2. Simulation results were compared to data reported in Kirch et al. 1980.<sup>53</sup> The results are reported in figures 3.3.3-5.
+With the drug-specific parameters fixed, the healthy PBPK model was translated to a CKD PBPK model CKD according to the defined method. 
 
-For the oral model, two populations, with target GFRs of 54±4 and 16±4 mL/min/1.73 m<sup>2</sup>, were created following the procedure described in section 2. Simulation results were compared to data reported in Sassard et al. 1977<sup>66</sup>. The results are reported in figures 3.3.6 and 3.3.7.
+A population with Stage 3 CKD was created according to the demographic parameters of the target population presented in the study of Kirch 1981 (eGFR 37-60 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of atenolol after multiple oral doses of 100 mg once daily for 7 days in this target population is presented in Figure 3.3.4.
 
+A population with Stage 4 CKD was created according to the demographic parameters of the target population presented in the study of Kirch 1981 (eGFR 17-30 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of atenolol after multiple oral doses of 100 mg once daily for 7 days in this target population is presented in Figure 3.3.5.
 
+A population with Stage 5 CKD was created according to the demographic parameters of the target population presented in the study of Kirch 1981 (eGFR 5-9 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of atenolol after multiple oral doses of 100 mg once daily for 7 days in this target population is presented in Figure 3.3.6.
 
+A population with Stage 3 CKD was created according to the demographic parameters of the target population presented in the study of Sassard 1977 (eGFR 46-60 mL/min/1.73m<sup>2</sup>). Simulation of the whole blood pharmacokinetics of atenolol after a single oral dose of 100 mg in this target population is presented in Figure 3.3.7.
 
-\newpage
-![Figure 8: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/7_time_profile_plot_Atenolol_Kirch_CKD3_100_mg_PO.png)
+A population with Stage 4-5 CKD was created according to the demographic parameters of the target population presented in the study of Sassard 1977 (eGFR 8-24 mL/min/1.73m<sup>2</sup>). Simulation of the whole blood pharmacokinetics of atenolol after a single oral dose of 100 mg in this target population is presented in Figure 3.3.8.
 
-
-<br>
-<br>
-
-
-
-
-\newpage
-![Figure 9: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/8_time_profile_plot_Atenolol_Kirch_CKD4_100_mg_PO.png)
-
-
-<br>
-<br>
+A population with Stage 3-4 CKD was created according to the demographic parameters of the target population presented in the study of Wan 1979 (eGFR 15-42 mL/min/1.73m<sup>2</sup>). Simulation of the pharmacokinetics of atenolol after a single oral dose of 50 mg in this target population is presented in Figure 3.3.9.
 
 
 
 
 \newpage
-![Figure 10: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/9_time_profile_plot_Atenolol_Kirch_CKD5_100_mg_PO.png)
+![Figure 9: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/7_time_profile_plot_Atenolol_Kirch_CKD3_100_mg_PO.png)
 
 
 <br>
@@ -520,7 +534,7 @@ For the oral model, two populations, with target GFRs of 54±4 and 16±4 mL/min/
 
 
 \newpage
-![Figure 11: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/11_time_profile_plot_Atenolol_Sassard_CKD3_100_mg_PO.png)
+![Figure 10: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/8_time_profile_plot_Atenolol_Kirch_CKD4_100_mg_PO.png)
 
 
 <br>
@@ -530,7 +544,7 @@ For the oral model, two populations, with target GFRs of 54±4 and 16±4 mL/min/
 
 
 \newpage
-![Figure 12: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/12_time_profile_plot_Atenolol_Sassard_CKD4_100_mg_PO.png)
+![Figure 11: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/9_time_profile_plot_Atenolol_Kirch_CKD5_100_mg_PO.png)
 
 
 <br>
@@ -540,7 +554,17 @@ For the oral model, two populations, with target GFRs of 54±4 and 16±4 mL/min/
 
 
 \newpage
-![Figure 13: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/13_time_profile_plot_Atenolol_Wan_Healthy_50mg_PO.png)
+![Figure 12: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/11_time_profile_plot_Atenolol_Sassard_CKD3_100_mg_PO.png)
+
+
+<br>
+<br>
+
+
+
+
+\newpage
+![Figure 13: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/12_time_profile_plot_Atenolol_Sassard_CKD4_100_mg_PO.png)
 
 
 <br>

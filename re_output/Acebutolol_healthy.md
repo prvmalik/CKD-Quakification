@@ -1,4 +1,4 @@
-A population of individuals based on Roux 1980 subjects was defined using the physiological database of PK-Sim.<sup>37,2</sup> **Table 1** presents the drug-specific parameters of acebutolol and the values used for the combined IV-oral model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2**.
+**Table 1** presents the drug-specific parameters of acebutolol and the values used for the combined IV-oral model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2**.
 
 **Table 1. Physicochemical properties and ADME of acebutolol for IV-oral model construction**
 
@@ -13,8 +13,8 @@ A population of individuals based on Roux 1980 subjects was defined using the ph
 | Partition coefficient                      | Rodgers and Rowland |
 | Cell permeability                          | PK-Sim Standard     |
 | Total clearance                            | 615 ± 59 mL/min<sup>42</sup>     |
-| KMET concentration                         | log-normally distributed with mean 1.0 µM and geometric SD 1.40 µM   |
-| KMET specific clearance                    | 0.68 1/min          |
+| CYP concentration                          | log-normally distributed with mean 1.0 µM and geometric SD 1.40 µM   |
+| CYP specific clearance                     | 0.68 1/min          |
 | OCT concentration                          | normally distributed with mean 1.0 µM and SD 0.20 µM <sup>47</sup>             |
 | OCT K<sub>m</sub>                          |  100 µM |
 | OCT In vitro V<sub>max</sub>/transporter   | 35.31 µM/min |
@@ -30,13 +30,13 @@ A population of individuals based on Roux 1980 subjects was defined using the ph
 | Intestine 2 V<sub>max</sub>                | 157.34 µM/min |
 | Specific intestinal permeability           | 1.48E-6 cm/min (PK-Sim calculated) |
 
-Since acebutolol is significantly metabolized by the liver, the expression of the non-specific enzyme processes, referred to as KMET throughout this report, were added with a first order intrinsic clearance process.
+Since acebutolol is significantly metabolized by the liver, the expression of the non-specific enzyme processes, referred to as CYP throughout this report, were added with a first order intrinsic clearance process.
 
-Acebutolol undergoes renal transportation via MATE proteins (MATE1, MATE2/2-K) and OCT proteins (OCT2/SLC22A2). The OCT2 proteins draw acebutolol through the basolateral side of the proximal tubule cells and the MATE proteins excrete the drug into the urine from the apical side of the proximal tubule cells. The kinetics of the two transporters are difficult to identify individually as there is no in vitro data. However, it was assumed that acebutolol’s efflux is rate limited by MATE proteins and that the $\text{Permeability\ x\ Surface\ Area}$ product was sufficiently fast enough to populate acebutolol in the renal epithelium. Therefore, the unknown kinetics of transport proteins were simplified into one average efflux transport protein which was represented on the apical side of the kidney. This simplified process of the OCT transport system is referred to as OCT throughout this report. The process followed active transport Michaelis-Menten kinetics and the K<sub>m</sub> of OCT was fixed at 100 µM.
+Acebutolol undergoes renal transportation via MATE proteins (MATE1, MATE2/2-K) and OCT proteins (OCT2/SLC22A2). The OCT2 proteins draw acebutolol through the basolateral side of the proximal tubule cells and the MATE proteins excrete the drug into the urine from the apical side of the proximal tubule cells. The kinetics of the two transporters are difficult to identify individually as there is no in vitro data. However, it was assumed that acebutolol’s efflux is rate limited by MATE proteins and that the Permeability x Surface Area product was sufficiently fast enough to populate acebutolol in the renal epithelium. Therefore, the unknown kinetics of transport proteins were simplified into one average efflux transport protein which was represented on the apical side of the kidney. This simplified process of the OCT transport system is referred to as OCT throughout this report. The process followed active transport Michaelis-Menten kinetics and the K<sub>m</sub> of OCT was fixed at 100 µM.
 
-The acebutolol oral formulation was developed assuming high solubility and fast dissolution based on its hydrophilicity (see **Table 1**). A Weibull function was used to describe the dissolution profile. The intestinal transporter-mediated uptake of acebutolol is likely driven by the influx of a transporter system, referred to as Intestine 2, that is located on the apical membrane of the caecum. Segment-dependent absorption was modeled by adding a fast efflux transporter to the basolateral side of the caecum, referred to as Intestine 1. Intestine 2 was added to the apical membrane of the cecum and its K<sub>m</sub> was fixed at 5000 µM to allow for linear kinetics while V<sub>max</sub> was optimized.
+The acebutolol oral formulation was developed assuming high solubility and fast dissolution based on its hydrophilicity (see **Table 1**). A Weibull function was used to describe the dissolution profile. The intestinal transporter-mediated uptake of acebutolol is likely driven by the influx of a transporter system, referred to as Intestine 2, that is located on the apical membrane of the caecum. Segment-dependent absorption was modeled by adding a fast efflux transporter to the basolateral side of the caecum, referred to as Intestine 1. Intestine 2 was added to the apical membrane of the caecum and its K<sub>m</sub> was fixed at 5000 µM to allow for linear kinetics while V<sub>max</sub> was optimized.
 
-**Table 2** presents the acebutolol datasets used for building the combined IV-oral model. The optimized KMET specific clearance, OCT V<sub>max</sub>, Intestine 2 V<sub>max</sub>, and specific intestinal permeability values are presented in **Table 1**.
+**Table 2** presents the acebutolol datasets used for building the combined IV-oral model. The optimized CYP specific clearance, OCT V<sub>max</sub>, Intestine 2 V<sub>max</sub>, and specific intestinal permeability values are presented in **Table 1**.
 
 The estimated fraction excreted to urine of 12% approximated the observed value of 15% measured at 70 hours after oral administration.<sup>37,43,44</sup> In contrast, the estimated fraction excreted to urine of 21% slightly underestimated the observed value of 35% measured at 48 hours after IV bolus administration.<sup>35,42</sup>
 

@@ -1,4 +1,4 @@
-A population of individuals based on Tjandrawinata 2014 subjects was defined using the physiological database of PK-Sim.<sup>33,2</sup> **Table 1** presents the drug-specific parameters of gabapentin and the values used for the oral administration model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2**.
+**Table 1** presents the drug-specific parameters of gabapentin and the values used for the oral administration model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2**.
 
 **Table 1. Physicochemical properties and ADME of gabapentin for oral model construction**
 
@@ -47,4 +47,4 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 
 <sup>c</sup>Approximated based on the reported range of BMI, 18.03 – 24.99 kg/m<sup>2</sup>.
 
-Figure 3.1.1 demonstrates the simulated oral model PK profiles in a healthy population compared against observed Tjandrawinata 2014 study data.<sup>33</sup>
+Figure 3.1.1 demonstrates the simulated oral model PK profiles in a healthy population compared against observed Blum 1994 study data.<sup>REF</sup>

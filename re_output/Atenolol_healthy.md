@@ -1,4 +1,4 @@
-A population of individuals based on Wan 1979 subjects was defined using the physiological database of PK-Sim.<sup>56,2</sup> **Table 1** and **Table 3** present the drug-specific parameters of atenolol and the values used for the IV and Oral administration models. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2** and **Table 4**.
+**Table 1** and **Table 3** present the drug-specific parameters of atenolol and the values used for the IV and Oral administration models. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2** and **Table 4**.
 
 ##### IV model
 
@@ -21,7 +21,7 @@ A population of individuals based on Wan 1979 subjects was defined using the phy
 | GFR fraction                                 | 1.0 |
 
 
-Atenolol undergoes renal transportation via MATE proteins (MATE1, MATE2/2-K) and OCT proteins (OCT2/SLC22A2).<sup>50</sup> The OCT2 proteins draw atenolol through the basolateral side of the proximal tubule cells and the MATE proteins excrete the drug into the urine from the apical side of the proximal tubule cells. The kinetics of the two transporters are difficult to identify individually. However, it was assumed that atenolol’s efflux is rate limited by MATE proteins and that the $\text{Permeability\ x\ Surface\ Area}$ product was sufficiently fast enough to populate atenolol in the renal epithelium. Therefore, the unknown kinetics of transport proteins were simplified into one net efflux transport protein which was represented on the apical side of the kidney. This simplified process of the OCT transport system is referred to as OCT throughout this report. To allow the process to follow linear kinetics, the K<sub>m</sub> of OCT was fixed at a high value (200 µM).<sup>51</sup>
+Atenolol undergoes renal transportation via MATE proteins (MATE1, MATE2/2-K) and OCT proteins (OCT2/SLC22A2).<sup>50</sup> The OCT2 proteins draw atenolol through the basolateral side of the proximal tubule cells and the MATE proteins excrete the drug into the urine from the apical side of the proximal tubule cells. The kinetics of the two transporters are difficult to identify individually. However, it was assumed that atenolol’s efflux is rate limited by MATE proteins and that the Permeability x Surface Area product was sufficiently fast enough to populate atenolol in the renal epithelium. Therefore, the unknown kinetics of transport proteins were simplified into one net efflux transport protein which was represented on the apical side of the kidney. This simplified process of the OCT transport system is referred to as OCT throughout this report. To allow the process to follow linear kinetics, the K<sub>m</sub> of OCT was fixed at a high value (200 µM).<sup>51</sup>
 
 The PK-Sim Standard and Rodgers and Rowland methods to calculate partition coefficients were evaluated with logP and OCT V<sub>max</sub> for optimization to the IV datasets describing atenolol disposition. The observed PK data were best described by using the PK-Sim Standard method for partition coefficient. The PK-Sim Standard method was also used for the calculation of cell permeability.
 
@@ -85,4 +85,4 @@ Atenolol is predominantly absorbed in the ileum.<sup>58-61</sup> The transporter
 
 <sup>c</sup>Mean ± SE reported.
 
-Figures 3.3.1 and 3.3.2 demonstrate the simulated oral model PK profiles in a population compared against observed Wan 1979, 50 mg PO and 100 mg PO study data, respectively.<sup>56</sup>.
+Figures 3.3.1, 3.3.2, and 3.3.3 demonstrate the simulated oral model PK profiles in a population compared against observed data from Wan 1979, Kirch 1981, and Sassard 1977, respectively.<sup>REF,REF,REF</sup>.

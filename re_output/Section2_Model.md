@@ -1,4 +1,4 @@
-In order to generate a virtual population suffering from CKD, the user must specify a target glomerular filtration rate (GFR). From there, PK-Sim will first generate a healthy population using the standard algorithm, and modify the physiological parameters of the simulated individuals to replicate a realistic CKD phenotype. The details of this process are outlined in Figure 2, with references to Figure 1, and Tables 1 and 2. For a complete description, see Malik et al.<sup>1</sup>
+In order to generate a virtual population of subjects with CKD, the user must specify a target range for glomerular filtration rate (GFR) (minimum to maximum). PK-Sim will first generate a healthy population using the standard algorithm - including the effects of aging as appropriate - and modify the physiological parameters of the simulated individuals to replicate a realistic CKD phenotype. The details of this process are outlined in Figure 2, with references to Figure 1, and Tables 1 and 2. For a complete description, see Malik et al.<sup>1</sup>
 
 |![test image](images/fig1(paper).PNG)|
 |:-:|
