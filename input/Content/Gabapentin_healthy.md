@@ -1,6 +1,6 @@
 **Table 1** presents the drug-specific parameters of gabapentin and the values used for the oral administration model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2**.
 
-**Table 1. Physicochemical properties and ADME of gabapentin for oral model construction**
+**Table 1. Physicochemical properties and ADME of gabapentin for the final oral model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
