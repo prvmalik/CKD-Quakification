@@ -872,6 +872,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in healthy subjects. Observed data (circles) presented from Blum.",
           "OriginText": "Gabapentin\nBlum Healthy 400 mg PO\n2022-04-05 14:06"
         }
       ]
@@ -1059,6 +1060,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in subjects with CKD. Observed data (circles) presented from Blum.",
           "OriginText": "Gabapentin\nBlum CKD3 400 mg PO\n2022-04-05 14:06"
         }
       ]
@@ -1246,6 +1248,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in subjects with CKD. Observed data (circles) presented from Blum.",
           "OriginText": "Gabapentin\nBlum CKD5 400 mg PO\n2022-04-05 14:06"
         }
       ]

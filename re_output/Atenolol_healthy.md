@@ -2,7 +2,7 @@
 
 ##### IV model
 
-**Table 1. Physicochemical properties and ADME of atenolol for IV model construction**
+**Table 1. Physicochemical properties and ADME of atenolol for the final IV model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
@@ -48,7 +48,7 @@ The PK-Sim Standard and Rodgers and Rowland methods to calculate partition coeff
 
 The oral PBPK model for the atenolol tablet was developed using literature values for the dissolution profile and solubility (see **Table 3**). A Weibull function was used to describe the dissolution profile.
 
-**Table 3. Oral absorption parameters for atenolol oral model construction**
+**Table 3. Oral absorption parameters for the final atenolol oral model**
 
 |   |  |
 |--|--|

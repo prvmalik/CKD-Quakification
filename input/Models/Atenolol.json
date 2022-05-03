@@ -2006,6 +2006,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in subjects with CKD. Observed data (circles) presented from Sassard.",
           "OriginText": "Atenolol (1)\nSassard CKD3 100 mg PO\n2022-04-05 10:38"
         }
       ]
@@ -2227,6 +2228,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in subjects with CKD. Observed data (circles) presented from Sassard.",
           "OriginText": "Atenolol (1)\nSassard CKD4 100 mg PO\n2022-04-05 10:40"
         }
       ]
@@ -2445,6 +2447,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in healthy subjects. Observed data (circles) presented from Sassard.",
           "OriginText": "Atenolol (1)\nSassard Healthy 100 mg PO\n2022-04-05 10:43"
         }
       ]
@@ -2680,6 +2683,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in healthy subjects. Observed data (circles) presented from Kirch.",
           "OriginText": "Atenolol (1)\nKirch Healthy 100 mg PO\n2022-04-05 10:02"
         }
       ]
@@ -2915,6 +2919,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in subjects with CKD. Observed data (circles) presented from Kirch.",
           "OriginText": "Atenolol (1)\nKirch CKD3 100 mg PO\n2022-04-05 11:11"
         }
       ]
@@ -3150,6 +3155,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in subjects with CKD. Observed data (circles) presented from Kirch.",
           "OriginText": "Atenolol (1)\nKirch CKD4 100 mg PO\n2022-04-05 09:56"
         }
       ]
@@ -3385,6 +3391,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in subjects with CKD. Observed data (circles) presented from Kirch.",
           "OriginText": "Atenolol (1)\nKirch CKD5 100 mg PO\n2022-04-05 09:59"
         }
       ]
@@ -3606,6 +3613,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Simulation of the pharmacokinetics of Atenolol after a single dose of 50 mg in subjects with CKD. Observed data (circles) presented from Wan.",
           "OriginText": "Atenolol_old\nWan CKD4 50 mg PO\n2022-04-28 11:01"
         }
       ]
@@ -3827,6 +3835,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Simulation of the pharmacokinetics of Atenolol after a single dose of 50 mg in healthy subjects. Observed data (circles) presented from Wan.",
           "OriginText": "Atenolol_old\nWan Healthy 50mg PO\n2022-04-28 11:05"
         }
       ]

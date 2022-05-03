@@ -177,7 +177,7 @@ Figure 3.1.1 demonstrates the simulated oral model PK profiles in a healthy popu
 
 
 \newpage
-![Figure 1: Time Profile Analysis](images/003_section_undefined-section-3/004_section_undefined-section-4/005_section_Gabapentin_Healthy/1_time_profile_plot_Gabapentin_Blum_Healthy_400_mg_PO.png)
+![Figure 1: Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in healthy subjects. Observed data (circles) presented from Blum.](images/003_section_undefined-section-3/004_section_undefined-section-4/005_section_Gabapentin_Healthy/1_time_profile_plot_Gabapentin_Blum_Healthy_400_mg_PO.png)
 
 
 <br>
@@ -203,7 +203,7 @@ A population with Stage 4-5 CKD was created according to the demographic paramet
 
 
 \newpage
-![Figure 2: Time Profile Analysis](images/003_section_undefined-section-3/004_section_undefined-section-4/006_section_Gabapentin_CKD/2_time_profile_plot_Gabapentin_Blum_CKD3_400_mg_PO.png)
+![Figure 2: Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in subjects with CKD. Observed data (circles) presented from Blum.](images/003_section_undefined-section-3/004_section_undefined-section-4/006_section_Gabapentin_CKD/2_time_profile_plot_Gabapentin_Blum_CKD3_400_mg_PO.png)
 
 
 <br>
@@ -213,7 +213,7 @@ A population with Stage 4-5 CKD was created according to the demographic paramet
 
 
 \newpage
-![Figure 3: Time Profile Analysis](images/003_section_undefined-section-3/004_section_undefined-section-4/006_section_Gabapentin_CKD/3_time_profile_plot_Gabapentin_Blum_CKD5_400_mg_PO.png)
+![Figure 3: Simulation of the pharmacokinetics of Gabapentin after a single dose of 400 mg in subjects with CKD. Observed data (circles) presented from Blum.](images/003_section_undefined-section-3/004_section_undefined-section-4/006_section_Gabapentin_CKD/3_time_profile_plot_Gabapentin_Blum_CKD5_400_mg_PO.png)
 
 
 <br>
@@ -313,7 +313,7 @@ Figure 3.2.1 demonstrate the simulated oral model PK profiles in a healthy popul
 
 
 \newpage
-![Figure 4: Time Profile Analysis](images/003_section_undefined-section-3/007_section_undefined-section-7/008_section_Acebutolol_Healthy/4_time_profile_plot_Acebutolol_Roux_Healthy_200_mg_PO.png)
+![Figure 4: Simulation of the pharmacokinetics of Acebutolol after a single dose of 200 mg in healthy subjects. Observed data (circles) presented from Roux.](images/003_section_undefined-section-3/007_section_undefined-section-7/008_section_Acebutolol_Healthy/4_time_profile_plot_Acebutolol_Roux_Healthy_200_mg_PO.png)
 
 
 <br>
@@ -337,7 +337,7 @@ A population with Stage 3-5 CKD was created according to the demographic paramet
 
 
 \newpage
-![Figure 5: Time Profile Analysis](images/003_section_undefined-section-3/007_section_undefined-section-7/009_section_Acebutolol_CKD/5_time_profile_plot_Acebutolol_Roux_CKD_200_mg_PO.png)
+![Figure 5: Simulation of the pharmacokinetics of Acebutolol after a single dose of 200 mg in subjects with CKD. Observed data (circles) presented from Roux.](images/003_section_undefined-section-3/007_section_undefined-section-7/009_section_Acebutolol_CKD/5_time_profile_plot_Acebutolol_Roux_CKD_200_mg_PO.png)
 
 
 <br>
@@ -474,7 +474,7 @@ Figures 3.3.1, 3.3.2, and 3.3.3 demonstrate the simulated oral model PK profiles
 
 
 \newpage
-![Figure 6: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/011_section_Atenolol_Healthy/6_time_profile_plot_Atenolol_Kirch_Healthy_100_mg_PO.png)
+![Figure 6: Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in healthy subjects. Observed data (circles) presented from Kirch.](images/003_section_undefined-section-3/010_section_undefined-section-10/011_section_Atenolol_Healthy/6_time_profile_plot_Atenolol_Kirch_Healthy_100_mg_PO.png)
 
 
 <br>
@@ -484,7 +484,7 @@ Figures 3.3.1, 3.3.2, and 3.3.3 demonstrate the simulated oral model PK profiles
 
 
 \newpage
-![Figure 7: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/011_section_Atenolol_Healthy/10_time_profile_plot_Atenolol_Sassard_Healthy_100_mg_PO.png)
+![Figure 7: Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in healthy subjects. Observed data (circles) presented from Sassard.](images/003_section_undefined-section-3/010_section_undefined-section-10/011_section_Atenolol_Healthy/10_time_profile_plot_Atenolol_Sassard_Healthy_100_mg_PO.png)
 
 
 <br>
@@ -494,7 +494,7 @@ Figures 3.3.1, 3.3.2, and 3.3.3 demonstrate the simulated oral model PK profiles
 
 
 \newpage
-![Figure 8: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/011_section_Atenolol_Healthy/13_time_profile_plot_Atenolol_Wan_Healthy_50mg_PO.png)
+![Figure 8: Simulation of the pharmacokinetics of Atenolol after a single dose of 50 mg in healthy subjects. Observed data (circles) presented from Wan.](images/003_section_undefined-section-3/010_section_undefined-section-10/011_section_Atenolol_Healthy/13_time_profile_plot_Atenolol_Wan_Healthy_50mg_PO.png)
 
 
 <br>
@@ -528,7 +528,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 
 
 \newpage
-![Figure 9: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/7_time_profile_plot_Atenolol_Kirch_CKD3_100_mg_PO.png)
+![Figure 9: Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in subjects with CKD. Observed data (circles) presented from Kirch.](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/7_time_profile_plot_Atenolol_Kirch_CKD3_100_mg_PO.png)
 
 
 <br>
@@ -538,7 +538,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 
 
 \newpage
-![Figure 10: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/8_time_profile_plot_Atenolol_Kirch_CKD4_100_mg_PO.png)
+![Figure 10: Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in subjects with CKD. Observed data (circles) presented from Kirch.](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/8_time_profile_plot_Atenolol_Kirch_CKD4_100_mg_PO.png)
 
 
 <br>
@@ -548,7 +548,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 
 
 \newpage
-![Figure 11: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/9_time_profile_plot_Atenolol_Kirch_CKD5_100_mg_PO.png)
+![Figure 11: Simulation of the pharmacokinetics of Atenolol after multiple doses of 100 mg once daily in subjects with CKD. Observed data (circles) presented from Kirch.](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/9_time_profile_plot_Atenolol_Kirch_CKD5_100_mg_PO.png)
 
 
 <br>
@@ -558,7 +558,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 
 
 \newpage
-![Figure 12: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/11_time_profile_plot_Atenolol_Sassard_CKD3_100_mg_PO.png)
+![Figure 12: Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in subjects with CKD. Observed data (circles) presented from Sassard.](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/11_time_profile_plot_Atenolol_Sassard_CKD3_100_mg_PO.png)
 
 
 <br>
@@ -568,7 +568,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 
 
 \newpage
-![Figure 13: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/12_time_profile_plot_Atenolol_Sassard_CKD4_100_mg_PO.png)
+![Figure 13: Simulation of the pharmacokinetics of Atenolol after a single dose of 100 mg in subjects with CKD. Observed data (circles) presented from Sassard.](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/12_time_profile_plot_Atenolol_Sassard_CKD4_100_mg_PO.png)
 
 
 <br>
@@ -578,7 +578,7 @@ A population with Stage 3-4 CKD was created according to the demographic paramet
 
 
 \newpage
-![Figure 14: Time Profile Analysis](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/14_time_profile_plot_Atenolol_Wan_CKD4_50_mg_PO.png)
+![Figure 14: Simulation of the pharmacokinetics of Atenolol after a single dose of 50 mg in subjects with CKD. Observed data (circles) presented from Wan.](images/003_section_undefined-section-3/010_section_undefined-section-10/012_section_Atenolol_CKD/14_time_profile_plot_Atenolol_Wan_CKD4_50_mg_PO.png)
 
 
 <br>
