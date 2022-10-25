@@ -16,7 +16,7 @@
 | GFR fraction                      | 1.0                         |
 | **Oral absorption parameters**    |                             |
 | Formulation dissolution           | Immediately dissolved<sup>a</sup>    |
-| LAT1 concentration                | log-normally distributed with mean 1.0 µM and geometric SD                     |
+| LAT1 concentration                | log-normally distributed with mean 1.0 µM and geometric SD 1.40                 |
 | LAT1 K<sub>m</sub>                         | 8630.97 µM                  |
 | LAT1 V<sub>max</sub>                       | 763.59 µM/min               |
 | Specific intestinal permeability  | 2.09E-7 cm/min              |
