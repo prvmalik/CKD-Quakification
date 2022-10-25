@@ -1,23 +1,23 @@
-1. Malik PR, Yeung CH, Ismaeil S, Advani U, Djie S, Edginton AN. A physiological approach to pharmacokinetics in chronic kidney disease. The Journal of Clinical Pharmacology. 2020 Nov;60:S52-62.
+1. Malik PR, Yeung CH, Ismaeil S, Advani U, Djie S, Edginton AN. A physiological approach to pharmacokinetics in chronic kidney disease. J Clin Pharmacol. 2020 Nov;60:S52-62.
 2. Willmann S, Hohn K, Edginton A, et al. Development of a physiology-based whole-body population model for assessing the influence of individual variability on the pharmacokinetics of drugs. J Pharmacokinet Pharmacodyn. 2007;34(3):401-31.
-3. Vegar Zubovic S, Kristic S, Sefic Pasic I. Relationship be-tween ultrasonographically determined kidney volume and progression of chronic kidney disease. Med Glas (Zenica). 2016;13(2):90-94
+3. Vegar Zubovic S, Kristic S, Sefic Pasic I. Relationship between ultrasonographically determined kidney volume and progression of chronic kidney disease. Med Glas (Zenica). 2016;13(2):90-4
 4. Jovanovic D, Gasic B, Pavlovic S, Naumovic R. Correlation of kidney size with kidney function and anthropometric parameters in healthy subjects and patients with chronic kidney diseases. Ren Fail. 2013;35(6):896-900.
-5. Kim HC, Yang DM, Jin W, Lee SH. Relation between total renal volume and renal function: usefulness of 3D sonographic measurements with a matrix array transducer. AJR Am J Roentgenol. 2010;194(2):W186-192.
-6. Buchanan CE, Mahmoud H, Cox EF, et al. Quantitative assessment of renal structural and functional changes in chronic kidney disease using multi-parametric magnetic resonance imaging. Nephrol Dial Transplant. 2020;35(6):955-964.
-7. Gillis KA, McComb C, Patel RK, et al. Non-contrast renal magnetic resonance imaging to assess perfusion and corticomedullary differentiation in health and chronic kidney disease. Nephron. 2016;133(3):183-192.
-8. Rossi C, Artunc F, Martirosian P, Schlemmer HP, Schick F, Boss A. Histogram analysis of renal arterial spin labeling per-fusion data reveals differences between volunteers and patients with mild chronic kidney disease. Invest Radiol. 2012;47(8):490-496.
-9. Hsu C-Y, Bates DW, Kuperman GJ, Curhan GC. Relationship between hematocrit and renal function in men and women. Kidney Int. 2001;59(2):725-731.
-10. Xia H, Ebben J, Ma JZ, Collins AJ. Hematocrit levels and hospitalization risks in hemodialysis patients. J Am Soc Nephrol. 1999;10(6):1309-1316.
-11. Ma JZ, Ebben J, Xia H, Collins AJ. Hematocrit level and associated mortality in hemodialysis patients. J Am Soc Nephrol. 1999;10(3):610-619.
-12. Tan ML, Yoshida K, Zhao P, et al. Effect of chronic kidney dis-ease on nonrenal elimination pathways: a systematic assessment of CYP1A2, CYP2C8, CYP2C9, CYP2C19, and OATP. Clin Pharmacol Ther. 2018;103(5):854-867.
+5. Kim HC, Yang DM, Jin W, Lee SH. Relation between total renal volume and renal function: usefulness of 3D sonographic measurements with a matrix array transducer. AJR Am J Roentgenol. 2010;194(2):W186-92.
+6. Buchanan CE, Mahmoud H, Cox EF, et al. Quantitative assessment of renal structural and functional changes in chronic kidney disease using multi-parametric magnetic resonance imaging. Nephrol Dial Transplant. 2020;35(6):955-64.
+7. Gillis KA, McComb C, Patel RK, et al. Non-contrast renal magnetic resonance imaging to assess perfusion and corticomedullary differentiation in health and chronic kidney disease. Nephron. 2016;133(3):183-92.
+8. Rossi C, Artunc F, Martirosian P, Schlemmer HP, Schick F, Boss A. Histogram analysis of renal arterial spin labeling per-fusion data reveals differences between volunteers and patients with mild chronic kidney disease. Invest Radiol. 2012;47(8):490-6.
+9. Hsu C-Y, Bates DW, Kuperman GJ, Curhan GC. Relationship between hematocrit and renal function in men and women. Kidney Int. 2001;59(2):725-31.
+10. Xia H, Ebben J, Ma JZ, Collins AJ. Hematocrit levels and hospitalization risks in hemodialysis patients. J Am Soc Nephrol. 1999;10(6):1309-16.
+11. Ma JZ, Ebben J, Xia H, Collins AJ. Hematocrit level and associated mortality in hemodialysis patients. J Am Soc Nephrol. 1999;10(3):610-19.
+12. Tan ML, Yoshida K, Zhao P, et al. Effect of chronic kidney dis-ease on nonrenal elimination pathways: a systematic assessment of CYP1A2, CYP2C8, CYP2C9, CYP2C19, and OATP. Clin Pharmacol Ther. 2018;103(5):854-67.
 13. Hirako M, Kamiya T, Misu N, et al. Impaired gastric motility and its relationship to gastrointestinal symptoms in patients with chronic renal failure. J Gastroenterol. 2005;40(12):1116.
-14. Fu R-G, Wang Y, Yuan H-Z, et al. Effects of chronic renal failure on gastrointestinal motility: a study on the changes of gastric emptying, small intestinal transit, interdigestive myoelectric complex, and fecal water content. Ren Fail. 2011;33(6):615-621.
-15. Guz G, Bali M, Poyraz NY, et al. Gastric emptying in patients on renal replacement therapy. Ren Fail. 2004;26(6):619-624.
-16. De Schoenmakere G, Vanholder R, Rottey S, Duym P, Lameire N. Relationship between gastric emptying and clinical and biochemical factors in chronic haemodialysis patients. Nephrol Dial Transplant. 2001;16(9):1850-1855.
-17. Van Vlem B, Schoonjans R, Vanholder R, et al. Delayed gastric emptying in dyspeptic chronic hemodialysis patients. Am J Kidney Dis. 2000;36(5):962-968.
+14. Fu R-G, Wang Y, Yuan H-Z, et al. Effects of chronic renal failure on gastrointestinal motility: a study on the changes of gastric emptying, small intestinal transit, interdigestive myoelectric complex, and fecal water content. Ren Fail. 2011;33(6):615-21.
+15. Guz G, Bali M, Poyraz NY, et al. Gastric emptying in patients on renal replacement therapy. Ren Fail. 2004;26(6):619-24.
+16. De Schoenmakere G, Vanholder R, Rottey S, Duym P, Lameire N. Relationship between gastric emptying and clinical and biochemical factors in chronic haemodialysis patients. Nephrol Dial Transplant. 2001;16(9):1850-5.
+17. Van Vlem B, Schoonjans R, Vanholder R, et al. Delayed gastric emptying in dyspeptic chronic hemodialysis patients. Am J Kidney Dis. 2000;36(5):962-8.
 18. Broberg B, Madsen JL, Fuglsang S, et al. Gastrointestinal motility in patients with end-stage renal disease on chronic hemodialysis. Neurogastroenterol Motil. 2019;31(4):e13554.
 19. Hoibian E, Florens N, Koppe L, Vidal H, Soulage CO. Distal colon motor dysfunction in mice with chronic kidney disease: Putative role of uremic toxins. Toxins (Basel). 2018;10(5):204.
-20. Wu MJ, Chang CS, Cheng CH, et al. Colonic transit time in long-term dialysis patients. Am J Kidne Dis. 2004;44(2):322-327.
+20. Wu MJ, Chang CS, Cheng CH, et al. Colonic transit time in long-term dialysis patients. Am J Kidne Dis. 2004;44(2):322-7.
 21. Pfizer. Neurontin (Gabapentin) Label. 2017.
 22. Bockbrader HN, Wesche D, Miller R, Chapel S, Janiczek N, Burger P. A comparison of the pharmacokinetics and pharmacodynamics of pregabalin and gabapentin. Clin Pharmacokinet. 2010;49(10):661-9.
 23. Vollmer KO, von Hodenberg A, Kolle EU. Pharmacokinetics and metabolism of gabapentin in rat, dog and man. Arzneimittelforschung. 1986;36(5):830-9.
