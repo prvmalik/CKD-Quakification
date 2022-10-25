@@ -16,7 +16,7 @@
 | GFR fraction                      | 1.0                         |
 | **Oral absorption parameters**    |                             |
 | Formulation dissolution           | Immediately dissolved<sup>a</sup>    |
-| LAT1 concentration                | log-normally distributed with mean 1.0 µM and geometric SD 1.40 µM                     |
+| LAT1 concentration                | log-normally distributed with mean 1.0 µM and geometric SD 1.40                 |
 | LAT1 K<sub>m</sub>                         | 8630.97 µM                  |
 | LAT1 V<sub>max</sub>                       | 763.59 µM/min               |
 | Specific intestinal permeability  | 2.09E-7 cm/min              |
@@ -33,13 +33,13 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 
 | **Study**              | **Dose and administration** | **Cohort**                    | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup> |
 |------------------------|-----------------------------|-------------------------------|-------|--------------------|--------------------|
-| Boyd 1999<sup>32</sup>          | 400 mg PO                   | White American females        | 18    | 49.1 ± 16.5        | 65.7 ± 8.5         |
-| Boyd 1999<sup>32</sup>          | 400 mg PO                   | White American males          | 18    | 49.9 ± 19.8        | 79.4 ± 10.8        |
-| Gidal 1998<sup>30</sup>         | 400 tid mg                  | European males                | 1     | 30<sup>b</sup>              | 73<sup>b</sup>              |
-| Gidal 1998<sup>30</sup>         | 800 tid mg                  | European males                | 1     | 30<sup>b</sup>              | 73<sup>b</sup>              |
-| Gidal 1998<sup>30</sup>         | 1200 tid mg                 | European males                | 1     | 30<sup>b</sup>              | 73<sup>b</sup>              |
-| Gidal 1998<sup>30</sup>         | 1600 tid mg                 | European males                | 1     | 30<sup>b</sup>              | 73<sup>b</sup>              |
-| Tjandrawinata 2014<sup>33</sup> | 300 mg PO                   | Asian males (65%) and females | 37    | 30 \[19 – 54\]<sup>c</sup>  | 60<sup>c</sup>              |
+| Boyd 1999<sup>32</sup>          | 400 mg                      | White American females        | 18    | 49.1 ± 16.5        | 65.7 ± 8.5         |
+| Boyd 1999<sup>32</sup>          | 400 mg                      | White American males          | 18    | 49.9 ± 19.8        | 79.4 ± 10.8        |
+| Gidal 1998<sup>30</sup>         | 400 mg tid                  | European males                | 1     | 30<sup>b</sup>              | 73<sup>b</sup>              |
+| Gidal 1998<sup>30</sup>         | 800 mg tid                  | European males                | 1     | 30<sup>b</sup>              | 73<sup>b</sup>              |
+| Gidal 1998<sup>30</sup>         | 1200 mg tid                 | European males                | 1     | 30<sup>b</sup>              | 73<sup>b</sup>              |
+| Gidal 1998<sup>30</sup>         | 1600 mg tid                 | European males                | 1     | 30<sup>b</sup>              | 73<sup>b</sup>              |
+| Tjandrawinata 2014<sup>33</sup> | 300 mg                      | Asian males (65%) and females | 37    | 30 \[19 – 54\]<sup>c</sup>  | 60<sup>c</sup>              |
 
 <sup>a</sup>Mean ± SD reported, or range in square brackets if SD not reported.
 
@@ -47,4 +47,4 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 
 <sup>c</sup>Approximated based on the reported range of BMI, 18.03 – 24.99 kg/m<sup>2</sup>.
 
-Figure 3.1.1 demonstrates the simulated oral model PK profiles in a healthy population compared against observed Blum 1994 study data.<sup>REF</sup>
+Figure 3.1.1 demonstrates the simulated oral model PK profiles in a healthy population compared against observed Blum 1994 study data.<sup>34</sup>
