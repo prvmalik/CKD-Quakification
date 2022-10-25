@@ -5,17 +5,17 @@
 | **Physicochemical properties**    |                             |
 |--|--|
 | Octanol:water coefficient (logP)           | 1.71 Log Units<sup>38</sup> |
-| Fraction unbound in plasma (f<sub>u</sub>) | 0.85<sup>40</sup> |
-| Molecular weight (MW)                      |  336.43 g/mol<sup>40</sup> |
-| pKa                                        | 9.40<sup>41</sup> |
-| Water solubility                           |  200 mg/mL<sup>41</sup> |
+| Fraction unbound in plasma (f<sub>u</sub>) | 0.85<sup>39</sup> |
+| Molecular weight (MW)                      |  336.43 g/mol<sup>39</sup> |
+| pKa                                        | 9.40<sup>40</sup> |
+| Water solubility                           |  200 mg/mL<sup>40</sup> |
 | **ADME**                                   |                             |
 | Partition coefficient                      | Rodgers and Rowland |
 | Cell permeability                          | PK-Sim Standard     |
-| Total clearance                            | 615 ± 59 mL/min<sup>42</sup>     |
-| CYP concentration                          | log-normally distributed with mean 1.0 µM and geometric SD 1.40 µM   |
+| Total clearance                            | 615 ± 59 mL/min<sup>41</sup>     |
+| CYP concentration                          | log-normally distributed with mean 1.0 µM and geometric SD 1.40   |
 | CYP specific clearance                     | 0.68 1/min          |
-| OCT concentration                          | normally distributed with mean 1.0 µM and SD 0.20 µM <sup>47</sup>             |
+| OCT concentration                          | normally distributed with mean 1.0 µM and SD 0.20 µM<sup>46</sup>             |
 | OCT K<sub>m</sub>                          |  100 µM |
 | OCT In vitro V<sub>max</sub>/transporter   | 35.31 µM/min |
 | GFR fraction                               |  1.0 |
@@ -25,7 +25,7 @@
 | Intestine 1 concentration                  | 1.00 µM |
 | Intestine 1 K<sub>m</sub>                  | 5000 µM |
 | Intestine 1 V<sub>max</sub>                | 5000 µM/min |
-| Intestine 2 concentration                  | normally distributed with mean 1.0 µM and SD 0.5 µM <sup>46</sup> |
+| Intestine 2 concentration                  | normally distributed with mean 1.0 µM and SD 0.5 µM<sup>45</sup> |
 | Intestine 2 K<sub>m</sub>                  | 5000 µM |
 | Intestine 2 V<sub>max</sub>                | 157.34 µM/min |
 | Specific intestinal permeability           | 1.48E-6 cm/min (PK-Sim calculated) |
@@ -38,17 +38,17 @@ The acebutolol oral formulation was developed assuming high solubility and fast 
 
 **Table 2** presents the acebutolol datasets used for building the combined IV-oral model. The optimized CYP specific clearance, OCT V<sub>max</sub>, Intestine 2 V<sub>max</sub>, and specific intestinal permeability values are presented in **Table 1**.
 
-The estimated fraction excreted to urine of 12% approximated the observed value of 15% measured at 70 hours after oral administration.<sup>37,43,44</sup> In contrast, the estimated fraction excreted to urine of 21% slightly underestimated the observed value of 35% measured at 48 hours after IV bolus administration.<sup>35,42</sup>
+The estimated fraction excreted to urine of 12% approximated the observed value of 15% measured at 70 hours after oral administration.<sup>37,42,43</sup> In contrast, the estimated fraction excreted to urine of 21% slightly underestimated the observed value of 35% measured at 48 hours after IV bolus administration.<sup>35,41</sup>
 
 **Table 2. Pharmacokinetic datasets for acebutolol IV-oral model construction**
 
 | **Study**      | **Dose and administration** | **Cohort**     | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup> |
 |----------------|-----------------------------|----------------|-------|--------------------|--------------------|
-| Gulaid 1981<sup>43</sup> | 400 mg PO                   | European males | 8     | 24 \[20 – 28\]     | 66.2<sup>b</sup>            |
+| Gulaid 1981<sup>42</sup> | 400 mg PO                   | European males | 8     | 24 \[20 – 28\]     | 66.2<sup>b</sup>            |
 | Roux 1980<sup>37</sup>   | 200 mg PO                   | European males | 10    | 26 ± 4             | 68 ± 9             |
-| Roux 1983<sup>44</sup>  | 400 mg PO                   | European males | 12    | 23.5 ± 2.1         | 69.3 ± 7.5         |
-| Roux 1983<sup>45</sup>  | 0.35 mg/kg IV bolus         | European males | 5     | 23.4 ± 1.7         | 76 ± 3.9           |
-| Roux 1983<sup>45</sup>  | 400 mg PO                   | European males | 5     | 23.4 ± 1.7         | 76 ± 3.9           |
+| Roux 1983<sup>43</sup>  | 400 mg PO                   | European males | 12    | 23.5 ± 2.1         | 69.3 ± 7.5         |
+| Roux 1983<sup>44</sup>  | 0.35 mg/kg IV bolus         | European males | 5     | 23.4 ± 1.7         | 76 ± 3.9           |
+| Roux 1983<sup>44</sup>  | 400 mg PO                   | European males | 5     | 23.4 ± 1.7         | 76 ± 3.9           |
 
 <sup>a</sup>Mean ± SD reported, or range in square brackets if SD not reported.
 
