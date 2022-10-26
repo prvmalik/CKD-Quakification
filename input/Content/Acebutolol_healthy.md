@@ -1,6 +1,6 @@
-**Table 1** presents the drug-specific parameters of acebutolol and the values used for the combined IV-oral model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2**.
+**Table 3.2.1** presents the drug-specific parameters of acebutolol and the values used for the combined IV-oral model. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 3.2.2**.
 
-**Table 1. Physicochemical properties and ADME of acebutolol for the final IV-oral model**
+**Table 3.2.1. Physicochemical properties and ADME of acebutolol for the final IV-oral model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
@@ -34,13 +34,13 @@ Since acebutolol is significantly metabolized by the liver, the expression of th
 
 Acebutolol undergoes renal transportation via MATE proteins (MATE1, MATE2/2-K) and OCT proteins (OCT2/SLC22A2). The OCT2 proteins draw acebutolol through the basolateral side of the proximal tubule cells and the MATE proteins excrete the drug into the urine from the apical side of the proximal tubule cells. The kinetics of the two transporters are difficult to identify individually as there is no in vitro data. However, it was assumed that acebutolol’s efflux is rate limited by MATE proteins and that the Permeability x Surface Area product was sufficiently fast enough to populate acebutolol in the renal epithelium. Therefore, the unknown kinetics of transport proteins were simplified into one average efflux transport protein which was represented on the apical side of the kidney. This simplified process of the OCT transport system is referred to as OCT throughout this report. The process followed active transport Michaelis-Menten kinetics and the K<sub>m</sub> of OCT was fixed at 100 µM.
 
-The acebutolol oral formulation was developed assuming high solubility and fast dissolution based on its hydrophilicity (see **Table 1**). A Weibull function was used to describe the dissolution profile. The intestinal transporter-mediated uptake of acebutolol is likely driven by the influx of a transporter system, referred to as Intestine 2, that is located on the apical membrane of the caecum. Segment-dependent absorption was modeled by adding a fast efflux transporter to the basolateral side of the caecum, referred to as Intestine 1. Intestine 2 was added to the apical membrane of the caecum and its K<sub>m</sub> was fixed at 5000 µM to allow for linear kinetics while V<sub>max</sub> was optimized.
+The acebutolol oral formulation was developed assuming high solubility and fast dissolution based on its hydrophilicity (see **Table 3.2.1**). A Weibull function was used to describe the dissolution profile. The intestinal transporter-mediated uptake of acebutolol is likely driven by the influx of a transporter system, referred to as Intestine 2, that is located on the apical membrane of the caecum. Segment-dependent absorption was modeled by adding a fast efflux transporter to the basolateral side of the caecum, referred to as Intestine 1. Intestine 2 was added to the apical membrane of the caecum and its K<sub>m</sub> was fixed at 5000 µM to allow for linear kinetics while V<sub>max</sub> was optimized.
 
-**Table 2** presents the acebutolol datasets used for building the combined IV-oral model. The optimized CYP specific clearance, OCT V<sub>max</sub>, Intestine 2 V<sub>max</sub>, and specific intestinal permeability values are presented in **Table 1**.
+**Table 3.2.2** presents the acebutolol datasets used for building the combined IV-oral model. The optimized CYP specific clearance, OCT V<sub>max</sub>, Intestine 2 V<sub>max</sub>, and specific intestinal permeability values are presented in **Table 3.2.1**.
 
 The estimated fraction excreted to urine of 12% approximated the observed value of 15% measured at 70 hours after oral administration.<sup>37,42,43</sup> In contrast, the estimated fraction excreted to urine of 21% slightly underestimated the observed value of 35% measured at 48 hours after IV bolus administration.<sup>35,41</sup>
 
-**Table 2. Pharmacokinetic datasets for acebutolol IV-oral model construction**
+**Table 3.2.2. Pharmacokinetic datasets for acebutolol IV-oral model construction**
 
 | **Study**      | **Dose and administration** | **Cohort**     | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup> |
 |----------------|-----------------------------|----------------|-------|--------------------|--------------------|
@@ -54,4 +54,4 @@ The estimated fraction excreted to urine of 12% approximated the observed value 
 
 <sup>b</sup>Average weight not reported in study. Estimated based on an average BMI of 22 kg/m<sup>2</sup>.
 
-Figure 3.2.1 demonstrate the simulated oral model PK profiles in a healthy population compared against observed Roux 1980 study data.<sup>37</sup>
+**Figure 3.2.1** shows the simulated oral model PK profiles in a healthy population compared against observed Roux 1980 study data.<sup>37</sup>
