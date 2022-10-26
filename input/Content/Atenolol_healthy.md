@@ -1,8 +1,8 @@
-**Table 1** and **Table 3** present the drug-specific parameters of atenolol and the values used for the IV and Oral administration models. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 2** and **Table 4**.
+**Table 3.3.1** and **Table 3.3.3** present the drug-specific parameters of atenolol and the values used for the IV and Oral administration models. Parameter optimization was carried out in PK-Sim using a Monte Carlo approach for exploring the parameter space, using the datasets summarized in **Table 3.3.2** and **Table 3.3.4**.
 
 ##### IV model
 
-**Table 1. Physicochemical properties and ADME of atenolol for the final IV model**
+**Table 3.3.1. Physicochemical properties and ADME of atenolol for the final IV model**
 
 | **Physicochemical properties**    |                             |
 |--|--|
@@ -25,9 +25,9 @@ Atenolol undergoes renal transportation via MATE proteins (MATE1, MATE2/2-K) and
 
 The PK-Sim Standard and Rodgers and Rowland methods to calculate partition coefficients were evaluated with logP and OCT V<sub>max</sub> for optimization to the IV datasets describing atenolol disposition. The observed PK data were best described by using the PK-Sim Standard method for partition coefficient. The PK-Sim Standard method was also used for the calculation of cell permeability.
 
-**Table 2** presents the atenolol datasets used for building the IV model. The optimized values are presented in **Table 1**. A proportional error model was chosen (i.e., log scaling).
+**Table 3.3.2** presents the atenolol datasets used for building the IV model. The optimized values are presented in **Table 3.3.1**. A proportional error model was chosen (i.e., log scaling).
 
-**Table 2. Pharmacokinetic datasets for atenolol IV model construction**
+**Table 3.3.2. Pharmacokinetic datasets for atenolol IV model construction**
 
 | **Study**     | **Dose and administration**   | **Cohort**                       | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup>   |
 |---------------|-------------------------------|----------------------------------|-------|--------------------|----------------------|
@@ -46,9 +46,9 @@ The PK-Sim Standard and Rodgers and Rowland methods to calculate partition coeff
 
 ##### Oral model
 
-The oral PBPK model for the atenolol tablet was developed using literature values for the dissolution profile and solubility (see **Table 3**). A Weibull function was used to describe the dissolution profile.
+The oral PBPK model for the atenolol tablet was developed using literature values for the dissolution profile and solubility (see **Table 3.3.3**). A Weibull function was used to describe the dissolution profile.
 
-**Table 3. Oral absorption parameters for the final atenolol oral model**
+**Table 3.3.3. Oral absorption parameters for the final atenolol oral model**
 
 |   |  |
 |--|--|
@@ -65,7 +65,7 @@ The oral PBPK model for the atenolol tablet was developed using literature value
 
 Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter-mediated uptake of atenolol is likely driven by the influx Plasma Membrane Monoamine Transporter (PMAT/SLC29A4) located on the apical membrane.<sup>61,62</sup> Segment-dependent absorption was modeled by adding a fast efflux transporter to the basolateral side of the lower ileum, referred to as Intestine 1. PMAT was added to the apical membrane of the lower ileum and its K<sub>m</sub> was fixed at 5000 µM to allow for linear kinetics while V<sub>max</sub> was optimized. Optimization of PMAT V<sub>max</sub> was carried out using a Monte Carlo approach to explore the parameter space.
 
-**Table 4. Pharmacokinetic datasets for atenolol oral model construction**
+**Table 3.3.4. Pharmacokinetic datasets for atenolol oral model construction**
 
 | **Study**        | **Dose and administration** | **Cohort**                             | **N** | **Age (years)**<sup>a</sup> | **Weight (kg)**<sup>a</sup>   |
 |------------------|-----------------------------|----------------------------------------|-------|--------------------|----------------------|
@@ -85,4 +85,4 @@ Atenolol is predominantly absorbed in the ileum.<sup>57-60</sup> The transporter
 
 <sup>c</sup>Mean ± SE reported.
 
-Figures 3.3.1, 3.3.2, and 3.3.3 demonstrate the simulated oral model PK profiles in a population compared against observed data from Wan 1979, Kirch 1981, and Sassard 1977, respectively.<sup>53,55,65</sup>.
+**Figures 3.3.1, 3.3.2, and 3.3.3** demonstrate the simulated oral model PK profiles in a population compared against observed data from Wan 1979, Kirch 1981, and Sassard 1977, respectively.<sup>53,55,65</sup>.
