@@ -1,14 +1,14 @@
-In order to generate a virtual population of subjects with CKD, the user must specify a target range for glomerular filtration rate (GFR) (minimum to maximum). PK-Sim will first generate a healthy population using the standard algorithm<sup>2</sup> - including the effects of aging as appropriate - and modify the physiological parameters of the simulated individuals to replicate a realistic CKD phenotype. The details of this process are outlined in Figure 2, with references to Figure 1, and Tables 1 and 2. For a complete description, see Malik et al.<sup>1</sup>
+In order to generate a virtual population of subjects with CKD, the user must specify a target range for glomerular filtration rate (GFR) (minimum to maximum). PK-Sim will first generate a healthy population using the standard algorithm<sup>2</sup> - including the effects of aging as appropriate - and modify the physiological parameters of the simulated individuals to replicate a realistic CKD phenotype. The details of this process are outlined in **Figure 2.1.2**, with references to **Figure 2.1.1**, **Table 2.1.1** and **Table 2.1.2**. For a complete description, see Malik et al.<sup>1</sup>
 
 |![test image](images/fig1(paper).PNG)|
 |:-:|
-|       *Figure 1: Simulated kidney volumes (left) and simulated renal cortex perfusion rates (right) in a population of adults aged 30-70 years with varying degrees of renal impairment compared with observed data from the literature.<sup>3-8</sup> Diamonds represent individual data, whereas error bars represent the range in a study. In order to assign realistic physiological parameters to virtual individuals, quadratic equations for kidney volume and renal cortex perfusion rates were optimized to log-transformed data.*         |
+|       *Figure 2.1.1: Simulated kidney volumes (left) and simulated renal cortex perfusion rates (right) in a population of adults aged 30-70 years with varying degrees of renal impairment compared with observed data from the literature.<sup>3-8</sup> Diamonds represent individual data, whereas error bars represent the range in a study. In order to assign realistic physiological parameters to virtual individuals, quadratic equations for kidney volume and renal cortex perfusion rates were optimized to log-transformed data.*         |
 
 |![test image](images/fig2(paper).PNG)|
 |:-:|
-|       *Figure 2: Algorithm for generation of virtual individuals with CKD while accounting for the effects of aging*         |
+|       *Figure 2.1.2: Algorithm for generation of virtual individuals with CKD while accounting for the effects of aging*         |
 
-**Table 1. Hematocrit in Patients With Chronic Kidney Disease<sup>9, 10, 11</sup>**
+**Table 2.1.1. Hematocrit in Patients With Chronic Kidney Disease<sup>9, 10, 11</sup>**
 
 | **Creatinine Clearance (mL/min/1.73 m<sup>2</sup>)**    | **Men HCT (%)**  | **Women HCT (%)** |
 |---------------------------------------------------------|------------------|-------------------|
@@ -22,7 +22,7 @@ In order to generate a virtual population of subjects with CKD, the user must sp
 | Hemodialysis                                            | 31               | 29                |
 
 
-**Table 2. Fraction of Healthy Values (Normal Coefficient of Variation % ) in Chronic Kidney Disease Patients by Stage**
+**Table 2.1.2. Fraction of Healthy Values (Normal Coefficient of Variation % ) in Chronic Kidney Disease Patients by Stage**
 
 |Parameter                     |    Stage 3 (30-60 mL/min/1.73 m<sup>2</sup>)   |    Stage 4 (15-30 mL/min/1.73 m<sup>2</sup>)  |    Stage 5 (<15 mL/min/1.73 m<sup>2</sup>)   |   Dialysis   |
 | :--------------------------- | :-------------------: | :---------------------: | :--------------------------: | :-------------------------: |
